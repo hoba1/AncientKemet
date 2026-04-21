@@ -1,0 +1,26 @@
+:root{
+    --main-color: #D4AF37;
+    --secondary-color: #C8A96E;
+    --background-color: #FAF6EE ;  /* in dark #0F0C06  */
+    --text-color: #141C1409 1210;  /* in dark #F5EDD5  */
+    --bg-card: #FFFFFF;     /* in dark #1A1508 */
+
+    --font-heading: 'Noto Serif', serif;
+    --font-body: "Inter", sans-serif;
+}
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--background-color);
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--background-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
