@@ -11,10 +11,131 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/blogs.css"/>
     <title>AncientKemet | Blogs</title>
 </head>
 <body>
-    Blogs Page
-    <script src="./js/all.min.js"></script>
+    <nav>
+      <div class="container">
+        <a href="./index.html" class="logo">Ancient Kemet</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./pyramids.html">Pyramids</a></li>
+          <li><a href="./tourguides.html">Tour Guide</a></li>
+          <li>
+            <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
+          </li>
+          <li>
+            <a href="./login.html"><button class="main-btn">Login</button></a>
+          </li>
+          <li>
+            <a href="./sign-up.html"
+              ><button class="main-btn">Sign Up</button></a
+            >
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+<div class="container">
+
+  <h1 class="title">Egypt Chronicles</h1>
+  <p class="subtitle">Stories from Ancient Egypt</p>
+
+  <div class="filters">
+    <input type="text" id="search" placeholder="Search articles..." onkeyup="filterBlogs()">
+
+    <div class="buttons">
+      <button class="active" onclick="setFilter('all', this)">All</button>
+      <button onclick="setFilter('people', this)">People</button>
+      <button onclick="setFilter('places', this)">Places</button>
+      <button onclick="setFilter('heritage', this)">Heritage</button>
+    </div>
+  </div>
+
+  <div class="cards">
+
+    <div class="card" data-category="people" onclick="openBlog(1)">
+      <img src="C:\big project\project\images\ancient people.jpg"/>
+
+
+      <h3>Famous Figures of Ancient Egypt</h3>
+      <p>Discover the lives of pharaohs and queens.</p>
+    </div>
+
+    <div class="card" data-category="places" onclick="openBlog(2)">
+      <img src="C:\big project\project\images\Pyramids.avif">
+      <h3>Ancient Egyptian Sites</h3>
+      <p>Explore temples and pyramids.</p>
+    </div>
+
+    <div class="card" data-category="heritage" onclick="openBlog(3)">
+      <img src="C:\big project\project\images\Heritage.jpeg">
+      <h3>Egyptian Heritage</h3>
+      <p>Art, beliefs and daily life.</p>
+    </div>
+
+  </div>
+
+
+</div>
+<footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">Egypt Heritage</h2>
+          <p>
+            Explore the legacy of ancient Egypt — history, culture, and timeless
+            wonders.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign-up.html">Sign Up</a></li>
+            <li><a href="./favorites.html">Favorites</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="./ancient-history.html">Ancient History</a></li>
+            <li><a href="./civilizations.html">Civilizations</a></li>
+            <li><a href="./pyramids.html">Pyramids</a></li>
+            <li><a href="./temples.html">Temples</a></li>
+            <li><a href="./museums.html">Museums</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>More</h3>
+          <ul>
+            <li><a href="./tourguides.html">Tour Guides</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Egypt Heritage. All rights reserved.</p>
+      </div>
+    </footer>
+   <script src = "./js/blogs.js"></script>
+   <script src = "./js/main.js"></script>
+   
 </body>
 </html>
