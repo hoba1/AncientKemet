@@ -57,10 +57,10 @@
         <button class="add-btn" id="openModalBtn">+ Add New</button>
     </div>
 
-    <section class="favorites-grid" id="favoritesGrid">
+    <section class="favorites-flex" id="favoritesGrid">
 
         <div class="favorite-card" data-type="monument">
-            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <button class="delete-btn" title="Remove from favorites"><i class="fa-solid fa-xmark"></i></button>
             <img class="card-img" src="./images/The-Great-Sphinx-Egypt.jpg" alt="The Great Sphinx of Giza">
             <div class="card-body">
                 <span class="badge badge-monument">MONUMENT</span>
@@ -71,7 +71,7 @@
         </div>
 
         <div class="favorite-card" data-type="artifact">
-            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <button class="delete-btn" title="Remove from favorites"><i class="fa-solid fa-xmark"></i></button>
             <img class="card-img" src="./images/tot.jpg" alt="Mask of Tutankhamun"  >
             <div class="card-body">
                 <span class="badge badge-artifact">ARTIFACT</span>
@@ -82,7 +82,7 @@
         </div>
 
         <div class="favorite-card" data-type="exhibition">
-            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <button class="delete-btn" title="Remove from favorites"><i class="fa-solid fa-xmark"></i></button>
             <img class="card-img" src="./images/khafra3.jpg" alt=" The Statue of Khafre">
             <div class="card-body">
                 <span class="badge badge-exhibition">EXHIBITION</span>
@@ -94,7 +94,7 @@
         </div>
 
         <div class="favorite-card" data-type="monument">
-            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <button class="delete-btn" title="Remove from favorites"><i class="fa-solid fa-xmark"></i></button>
             <img class="card-img" src="./images/templek.jpg" alt="Karnak Temple Complex">
             <div class="card-body">
                 <span class="badge badge-monument">MONUMENT</span>
@@ -105,7 +105,7 @@
         </div>
 
         <div class="favorite-card" data-type="artifact">
-            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <button class="delete-btn" title="Remove from favorites"><i class="fa-solid fa-xmark"></i></button>
             <img class="card-img" src="./images/stone.webp" alt="The Rosetta Stone">
             <div class="card-body">
                 <span class="badge badge-artifact">ARTIFACT</span>
@@ -116,7 +116,7 @@
         </div>
 
         <div class="favorite-card" data-type="exhibition">
-            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <button class="delete-btn" title="Remove from favorites"><i class="fa-solid fa-xmark"></i></button>
             <img class="card-img" src="./images/great-temple-of-ramseswebp.webp" alt="The Gilded Dynasty">
             <div class="card-body">
                 <span class="badge badge-exhibition">EXHIBITION</span>
@@ -131,7 +131,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
-          <h2 class="footer-logo">Ancient Kemet</h2>
+          <h2 class="footer-logo">Egypt Heritage</h2>
           <p>
             Explore the legacy of ancient Egypt — history, culture, and timeless
             wonders.
@@ -173,7 +173,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Ancient Kemet. All rights reserved.</p>
+        <p>© 2026 Egypt Heritage. All rights reserved.</p>
       </div>
     </footer>
 <script src = "./js/main.js"></script> <script src="./js/all.min.js"></script>
@@ -199,7 +199,7 @@
             this.classList.add('active');
             const filter = this.dataset.filter;
             document.querySelectorAll('.favorite-card').forEach(card => {
-                card.style.display = (filter === 'all' || card.dataset.type === filter) ? 'block' : 'none';
+                card.style.display = (filter === 'all' || card.dataset.type === filter) ? 'flex' : 'none';
             });
         });
     });
