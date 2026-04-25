@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: var(--font-body);
-  background: var(--background-color);
-  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+  background: #0e0e12;
+  color: #eee;
 }
 
 .container {
@@ -12,12 +12,12 @@ body {
 }
 
 .title {
-  color: var(--main-color);
+  color: #d4af37;
   margin-bottom: 5px;
 }
 
 .subtitle {
-  color: var(--secondary-color);
+  color: #aaa;
   margin-bottom: 25px;
 }
 
@@ -32,15 +32,15 @@ body {
   padding: 10px;
   border-radius: 8px;
   border: none;
-  background: var(--bg-card);
-  color: var(--text-color);
+  background: #1a1a22;
+  color: white;
 }
 
 .buttons button {
   margin-left: 8px;
   padding: 7px 12px;
-  background: var(--bg-card);
-  color: var(--text-color);
+  background: #1a1a22;
+  color: #ccc;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -48,8 +48,8 @@ body {
 
 .buttons .active,
 .buttons button:hover {
-  background: var(--main-color);
-  color: var(--background-color);
+  background: #d4af37;
+  color: black;
 }
 
 /* Cards */
@@ -59,7 +59,7 @@ body {
 }
 
 .card {
-  background: var(--bg-card);
+  background: #1a1a22;
   border-radius: 12px;
   overflow: hidden;
   width: 30%;
@@ -75,18 +75,76 @@ body {
 
 .card h3 {
   margin: 10px;
-  color: var(--main-color);
+  color: #d4af37;
 }
 
 .card p {
   margin: 0 10px 15px;
-  color: var(--secondary-color);
+  color: #aaa;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
-.back {
-    cursor: pointer;
+/* ========== Responsive ========== */
 
+/* ================= Responsive (Add Only) ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 48%;
+  }
+}
+
+/* Mobile (iPhone 12 Pro ~ 390px) */
+@media (max-width: 480px) {
+  .container {
+    width: 92%;
+    padding: 20px 0;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .buttons button {
+    margin-left: 0;
+    flex: 1;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
 }
