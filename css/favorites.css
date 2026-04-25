@@ -1,0 +1,233 @@
+/* favorites.css */
+
+/* ===== قسم الهيرو ===== */
+.favorites-hero {
+    padding: 40px;
+}
+
+.favorites-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+
+.favorites-hero p {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--text-color);
+    max-width: 500px;
+    opacity: 0.7;
+}
+
+/* ===== شريط الفلتر وزرار الاضافة ===== */
+.favorites-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* زراير الفلتر */
+.filter-btn {
+    font-family: var(--font-body);
+    font-size: 13px;
+    padding: 6px 18px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.2s;
+    letter-spacing: 0.5px;
+    opacity: 0.7;
+}
+
+.filter-btn:hover {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.filter-btn.active {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* زرار اضافة كارت */
+.add-btn {
+    font-family: var(--font-body);
+    font-size: 13px;
+    padding: 7px 20px;
+    background: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    background: var(--main-color);
+    color: var(--background-color);
+}
+
+/* ===== الجريد ===== */
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 40px 60px;
+}
+
+/* ===== الكارت ===== */
+.favorite-card {
+    border: 1px solid var(--main-color);
+    border-top: 3px solid var(--main-color);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative; /* عشان زرار الحذف يتحدد مكانه بالنسبة للكارت */
+}
+
+.favorite-card:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+    transform: translateY(-12px) scale(1.02);
+}
+
+/* ===== زرار الحذف ===== */
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #888888;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s, background 0.2s, color 0.2s;
+    z-index: 10;
+    line-height: 1;
+}
+
+/* ← زود السطرين دول */
+.favorite-card:hover .delete-btn {
+    opacity: 1;
+}
+/* يظهر لما الماوس يعدي على الكارت */
+.favorite-card {
+    border: 1px solid var(--main-color);
+    border-top: 3px solid var(--main-color);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-card);
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+    color: #ffffff;
+    border-color: #c0392b;
+}
+
+/* ===== صورة الكارت ===== */
+/* ===== صورة الكارت ===== */
+.card-img {
+    width: 100%;
+    height: 220px; /* ← حط ارتفاع ثابت */
+    display: block;
+    object-fit: cover;
+     object-position: center top;
+}
+
+/* placeholder لو مفيش صورة */
+.card-img-placeholder {
+    width: 100%;
+    height: 160px;
+    background: #f0ece0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== جسم الكارت ===== */
+.card-body {
+    padding: 16px;
+    flex: 1; /* ← زود عشان يملا الباقي */
+}
+.card-body h3 {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.card-body p {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--text-color);
+    opacity: 0.75;
+    margin-bottom: 12px;
+}
+
+.card-body a,
+.card-body a:visited {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+/* ===== الميتا ===== */
+.card-meta {
+    font-size: 12px;
+    color: var(--text-color);
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ===== البادجات ===== */
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 1px solid var(--main-color);
+}
+
+.badge-monument {
+    color: var(--main-color);
+}
+
+.badge-artifact {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.badge-exhibition {
+    color: #C08040;
+    border-color: #C08040;
+}
