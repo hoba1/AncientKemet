@@ -7,14 +7,202 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/favorites.css" />
     <title>AncientKemet | Favorites</title>
 </head>
 <body>
-    Favorites Page
-    <script src="./js/all.min.js"></script>
+    <nav>
+      <div class="container">
+        <a href="./index.html" class="logo">Ancient Kemet</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./pyramids.html">Pyramids</a></li>
+          <li><a href="./tourguides.html">Tour Guide</a></li>
+          <li>
+            <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
+          </li>
+          <li>
+            <a href="./login.html"><button class="main-btn">Login</button></a>
+          </li>
+          <li>
+            <a href="./sign-up.html"
+              ><button class="main-btn">Sign Up</button></a
+            >
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <section class="favorites-hero">
+        <h1>My Favorites</h1>
+        <p>Your personal collection of saved artifacts, monumental sites, and historical narratives from the Gilded Dynasty.</p>
+    </section>
+
+    <!-- ===== شريط الفلتر وزرار الاضافة ===== -->
+    <div class="favorites-controls">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="monument">Monument</button>
+            <button class="filter-btn" data-filter="artifact">Artifact</button>
+            <button class="filter-btn" data-filter="exhibition">Exhibition</button>
+        </div>
+        <button class="add-btn" id="openModalBtn">+ Add New</button>
+    </div>
+
+    <section class="favorites-grid" id="favoritesGrid">
+
+        <div class="favorite-card" data-type="monument">
+            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <img class="card-img" src="./images/The-Great-Sphinx-Egypt.jpg" alt="The Great Sphinx of Giza">
+            <div class="card-body">
+                <span class="badge badge-monument">MONUMENT</span>
+                <h3>The Great Sphinx of Giza</h3>
+                <p>A limestone statue of a reclining sphinx, a mythical creature with the body of a lion and the head of a human, facing directly from West to East.</p>
+                <a href="https://egymonuments.gov.eg/en/monuments/the-great-sphinx/">VIEW DETAILS →</a>
+            </div>
+        </div>
+
+        <div class="favorite-card" data-type="artifact">
+            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <img class="card-img" src="./images/tot.jpg" alt="Mask of Tutankhamun"  >
+            <div class="card-body">
+                <span class="badge badge-artifact">ARTIFACT</span>
+                <h3>Mask of Tutankhamun</h3>
+                <p>The gold mask of the 18th-dynasty ancient Egyptian pharaoh Tutankhamun, discovered in 1925 in tomb KV62.</p>
+                <a href="https://gem.eg/en/collection/artefacts/the-golden-burial-mask-of-tutankhamun">READ NARRATIVE →</a>
+            </div>
+        </div>
+
+        <div class="favorite-card" data-type="exhibition">
+            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <img class="card-img" src="./images/khafra3.jpg" alt=" The Statue of Khafre">
+            <div class="card-body">
+                <span class="badge badge-exhibition">EXHIBITION</span>
+                <h3> The Statue of Khafre</h3>
+                <p>A stunning Old Kingdom masterpiece carved from dark stone around 2500 BC, depicting Pharaoh Khafre enthroned with the falcon god Horus embracing his head — one of the most complete royal statues ever found in ancient Egypt..</p>
+                <span class="card-meta"></span>
+                <a href="https://arce.org/khafre-enthroned/">EXPLORE →</a>
+            </div>
+        </div>
+
+        <div class="favorite-card" data-type="monument">
+            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <img class="card-img" src="./images/templek.jpg" alt="Karnak Temple Complex">
+            <div class="card-body">
+                <span class="badge badge-monument">MONUMENT</span>
+                <h3>Karnak Temple Complex</h3>
+                <p>A vast mix of decayed temples, chapels, pylons, and other buildings built over roughly 2,000 years near Luxor.</p>
+                <a href="https://egymonuments.gov.eg/en/archaeological-sites/karnak">EXPLORE SITE →</a>
+            </div>
+        </div>
+
+        <div class="favorite-card" data-type="artifact">
+            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <img class="card-img" src="./images/stone.webp" alt="The Rosetta Stone">
+            <div class="card-body">
+                <span class="badge badge-artifact">ARTIFACT</span>
+                <h3>The Rosetta Stone</h3>
+                <p>A granodiorite stele inscribed with three versions of a decree issued in Memphis, Egypt in 196 BC during the Ptolemaic dynasty.</p>
+                <a href="https://en.wikipedia.org/wiki/Rosetta_Stone">READ NARRATIVE →</a>
+            </div>
+        </div>
+
+        <div class="favorite-card" data-type="exhibition">
+            <button class="delete-btn" title="Remove from favorites">&#10005;</button>
+            <img class="card-img" src="./images/great-temple-of-ramseswebp.webp" alt="The Gilded Dynasty">
+            <div class="card-body">
+                <span class="badge badge-exhibition">EXHIBITION</span>
+                <h3>The Gilded Dynasty</h3>
+                <p>An immersive journey through the reign of Ramesses II — exploring royal architecture, court life, and divine kingship.</p>
+                <span class="card-meta">60 min read</span>
+                <a href="https://archaeology.org/collection/rediscovering-egypts-golden-dynasty/">EXPLORE →</a>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">Egypt Heritage</h2>
+          <p>
+            Explore the legacy of ancient Egypt — history, culture, and timeless
+            wonders.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign-up.html">Sign Up</a></li>
+            <li><a href="./favorites.html">Favorites</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="./ancient-history.html">Ancient History</a></li>
+            <li><a href="./civilizations.html">Civilizations</a></li>
+            <li><a href="./pyramids.html">Pyramids</a></li>
+            <li><a href="./temples.html">Temples</a></li>
+            <li><a href="./museums.html">Museums</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>More</h3>
+          <ul>
+            <li><a href="./tourguides.html">Tour Guides</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Egypt Heritage. All rights reserved.</p>
+      </div>
+    </footer>
+<script src = "./js/main.js"></script> <script src="./js/all.min.js"></script>
+
+
+  <script>
+    // حذف كارت
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('delete-btn')) {
+            const card = e.target.closest('.favorite-card');
+            card.style.transition = 'opacity 0.3s, transform 0.3s';
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.9)';
+            setTimeout(() => card.remove(), 300);
+        }
+    });
+
+    // فلتر
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const filter = this.dataset.filter;
+            document.querySelectorAll('.favorite-card').forEach(card => {
+                card.style.display = (filter === 'all' || card.dataset.type === filter) ? 'block' : 'none';
+            });
+        });
+    });
+</script>
 </body>
 </html>
