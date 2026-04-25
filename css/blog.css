@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #0e0e12;
-  color: #eee;
+  font-family: var(--font-body);
+  background: var(--background-color);
+  color: var(--text-color);
 }
 
 .container {
@@ -12,12 +12,12 @@ body {
 }
 
 .title {
-  color: #d4af37;
+  color: var(--main-color);
   margin-bottom: 5px;
 }
 
 .subtitle {
-  color: #aaa;
+  color: var(--secondary-color);
   margin-bottom: 25px;
 }
 
@@ -32,15 +32,15 @@ body {
   padding: 10px;
   border-radius: 8px;
   border: none;
-  background: #1a1a22;
-  color: white;
+  background: var(--bg-card);
+  color: var(--text-color);
 }
 
 .buttons button {
   margin-left: 8px;
   padding: 7px 12px;
-  background: #1a1a22;
-  color: #ccc;
+  background: var(--bg-card);
+  color: var(--text-color);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -48,8 +48,8 @@ body {
 
 .buttons .active,
 .buttons button:hover {
-  background: #d4af37;
-  color: black;
+  background: var(--main-color);
+  color: var(--background-color);
 }
 
 /* Cards */
@@ -59,7 +59,7 @@ body {
 }
 
 .card {
-  background: #1a1a22;
+  background: var(--bg-card);
   border-radius: 12px;
   overflow: hidden;
   width: 30%;
@@ -75,22 +75,20 @@ body {
 
 .card h3 {
   margin: 10px;
-  color: #d4af37;
+  color: var(--main-color);
 }
 
 .card p {
   margin: 0 10px 15px;
-  color: #aaa;
+  color: var(--secondary-color);
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
-/* ========== Responsive ========== */
 
-/* ================= Responsive (Add Only) ================= */
+/* ================= Responsive (بدون تغيير الشكل) ================= */
 
-/* Tablets */
 @media (max-width: 992px) {
   .cards {
     flex-wrap: wrap;
@@ -101,11 +99,14 @@ body {
   }
 }
 
-/* Mobile (iPhone 12 Pro ~ 390px) */
 @media (max-width: 480px) {
-  .container {
-    width: 92%;
-    padding: 20px 0;
+  .cards {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
   }
 
   .filters {
@@ -117,34 +118,7 @@ body {
     width: 100%;
   }
 
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
   .buttons button {
     margin-left: 0;
-    flex: 1;
-  }
-
-  .cards {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  .card img {
-    height: 180px;
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .subtitle {
-    font-size: 14px;
   }
 }
