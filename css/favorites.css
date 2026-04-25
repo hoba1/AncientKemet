@@ -15,9 +15,8 @@
 .favorites-hero p {
     font-family: var(--font-body);
     font-size: 14px;
-    color: var(--text-color);
+     color: var(--text-color);
     max-width: 500px;
-    opacity: 0.7;
 }
 
 /* ===== شريط الفلتر وزرار الاضافة ===== */
@@ -44,11 +43,10 @@
     border: 1px solid var(--secondary-color);
     border-radius: 3px;
     background: transparent;
-    color: var(--text-color);
+     color: var(--text-color);
     cursor: pointer;
     transition: 0.2s;
     letter-spacing: 0.5px;
-    opacity: 0.7;
 }
 
 .filter-btn:hover {
@@ -59,7 +57,7 @@
 .filter-btn.active {
     background: var(--main-color);
     border-color: var(--main-color);
-    color: var(--text-color);
+  color: var(--text-color);
     font-weight: 500;
 }
 
@@ -79,24 +77,30 @@
 
 .add-btn:hover {
     background: var(--main-color);
-    color: var(--background-color);
+      color: var(--background-color);
 }
 
 /* ===== الجريد ===== */
-.favorites-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.favorites-flex {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 0 40px 60px;
 }
 
 /* ===== الكارت ===== */
 .favorite-card {
+    flex: 0 1 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
+    min-width: 260px;
     border: 1px solid var(--main-color);
     border-top: 3px solid var(--main-color);
     border-radius: 4px;
     overflow: hidden;
-    position: relative; /* عشان زرار الحذف يتحدد مكانه بالنسبة للكارت */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-card);
 }
 
 .favorite-card:hover {
@@ -132,16 +136,6 @@
     opacity: 1;
 }
 /* يظهر لما الماوس يعدي على الكارت */
-.favorite-card {
-    border: 1px solid var(--main-color);
-    border-top: 3px solid var(--main-color);
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg-card);
-}
 
 .delete-btn:hover {
     background: #c0392b;
@@ -177,12 +171,12 @@
 .card-body h3 {
     font-family: var(--font-heading);
     font-size: 16px;
-    color: var(--text-color);
+     color: var(--text-color);
     margin-bottom: 8px;
 }
 
 .card-body p {
-    font-family: var(--font-body);
+     font-family: var(--font-body);
     font-size: 13px;
     color: var(--text-color);
     opacity: 0.75;
@@ -201,7 +195,7 @@
 
 /* ===== الميتا ===== */
 .card-meta {
-    font-size: 12px;
+    ont-size: 12px;
     color: var(--text-color);
     opacity: 0.5;
     display: block;
@@ -245,9 +239,13 @@
         align-items: flex-start;
     }
 
-    .favorites-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .favorites-flex {
         padding: 0 20px 40px;
+    }
+
+    .favorite-card {
+        flex: 0 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
     }
 
     .card-img {
@@ -279,9 +277,13 @@
         text-align: center;
     }
 
-    .favorites-grid {
-        grid-template-columns: 1fr;
+    .favorites-flex {
         padding: 0 15px 30px;
+    }
+
+    .favorite-card {
+        flex: 0 1 100%;
+        max-width: 100%;
     }
 
     .card-img {
