@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,11 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/blog.css"/>
+    <link rel="stylesheet" href="./css/blog.css" />
     <title>AncientKemet | Blog</title>
-</head>
-<body>
-   <nav>
+  </head>
+  <body>
+    <nav>
       <div class="container">
         <a href="./index.html" class="logo">Ancient Kemet</a>
         <ul class="nav-links">
@@ -44,19 +44,20 @@
       </div>
     </nav>
 
-<div class="container">
+    <section class="blog">
+      <div class="container">
+        <span class="back" onclick="goBack()">⬅ Back</span>
+  
+        <h1 id="title"></h1>
+        <img id="image" class="blog-img" />
+        <p id="content"></p>
+      </div>
+    </section>
 
-  <span class="back" onclick="goBack()">⬅ Back</span>
-
-  <h1 id="title"></h1>
-  <img id="image" class="blog-img">
-  <p id="content"></p>
-
-</div>
-<footer class="footer">
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
-          <h2 class="footer-logo">Egypt Heritage</h2>
+          <h2 class="footer-logo">Ancient Kemet</h2>
           <p>
             Explore the legacy of ancient Egypt — history, culture, and timeless
             wonders.
@@ -98,11 +99,11 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Egypt Heritage. All rights reserved.</p>
+        <p>© 2026 Ancient Kemet. All rights reserved.</p>
       </div>
     </footer>
 
-    <script src = "./js/main.js"></script>
-    <script src = "./js/blogs.js"></script>
-</body>
+    <script src="./js/main.js"></script>
+    <script src="./js/blogs.js"></script>
+  </body>
 </html>
