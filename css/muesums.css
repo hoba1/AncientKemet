@@ -40,21 +40,6 @@ body {
     margin-left: 60px;
 }
 
-.the-grand-museum ,.the-coptic-museum{
-    gap: 40px;
-    margin-right: 20px;
-    border-top: 5px solid var(--main-color);
-    width: 95%;
-    min-height: 500px;
-    background-color: var(--bg-card);
-    padding: 30px;
-    margin: 20px auto;
-    display: block;
-    justify-content: flex-start;
-    background-size: cover;
-    border-radius: 24px;
-    background-position: center;
-}
 
 .the-grand-museum {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Images/The-Grand-Egyptian-Museum.jpg');
@@ -92,26 +77,8 @@ body {
      font-size: 15px;
 } 
 
-/* البتاعه الزرقا */
-.category-badge {
-    background-color: #8EB8E0;
-    color: var(--text-color);
-    padding: 6px 16px;
-    border-radius: 50px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    display: inline-block;
-    margin-top: 70px;
-}
-/* باين انه عنوان صح ؟ */
-.the-grand-museum h1,.the-coptic-museum h1 {
-    font-family: var(--font-heading);
-    font-size: 60px;
-    width: 60%;
-    color: var(--main-color);
-    margin-bottom: 15px;
-}
+
+
 /* ده بقا سشكن الكاردز */
 .title{
     font-family: var(--font-heading);
