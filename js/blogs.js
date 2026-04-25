@@ -10,7 +10,7 @@ function goBack() {
 let blogs = {
   1: {
     title: "Famous Figures of Ancient Egypt",
-    image: "C:/big project/project/images/ancient people.jpg",
+    image: "./images/ancient people.jpg",
     content: `Ancient Egypt was home to some of the most influential figures in history. 
 Among them was Queen Nefertiti, known for her beauty and her role alongside Pharaoh Akhenaten in religious reform. 
 Tutankhamun, often called the Boy King, became famous after the discovery of his nearly intact tomb in 1922. 
@@ -21,7 +21,7 @@ These figures played central roles in shaping politics, religion, and culture, l
 
   2: {
     title: "Ancient Egyptian Sites",
-    image: "C:/big project/project/images/Pyramids.avif",
+    image: "./images/Pyramids.avif",
     content: `Egypt is home to some of the world's most remarkable ancient sites. 
 The Pyramids of Giza, built as royal tombs, remain one of the Seven Wonders of the Ancient World. 
 The Karnak Temple complex in Luxor is one of the largest religious structures ever constructed, dedicated primarily to the god Amun.
@@ -32,7 +32,7 @@ These locations provide valuable insight into the engineering skills and religio
 
   3: {
     title: "Egyptian Heritage",
-    image: "C:/big project/project/images/Heritage.jpeg",
+    image: "./images/Heritage.jpeg",
     content: `Ancient Egyptian heritage is rich in art, religion, and daily traditions. 
 Hieroglyphic writing was used to record important events and religious texts. 
 Art often depicted gods, pharaohs, and scenes of daily life, reflecting both spiritual and social values.
