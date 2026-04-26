@@ -7,7 +7,78 @@ body {
     overflow-x: hidden; /* ضروري جداً عشان يمنع شريط التمرير العرضي */
 }
 
+.the-grand-museum {
+    gap: 40px;
+    margin-right: 20px;
+    border-top: 5px solid var(--main-color);
+    width: 95%;
+    min-height: 500px;
+    background-color: var(--bg-card);
+    padding: 30px;
+    margin: 20px auto;
+    display: block;
+    justify-content: flex-start;
+    background-size: cover;
+    border-radius: 24px;
+    background-position: center;
+}
 
+.the-grand-museum {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Images/The-Grand-Egyptian-Museum.jpg');
+}
+
+.the-coptic-museum{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Images/GD-EG-Caire-MuséeIslam001.jpg');
+}
+/* الكلام اللي في الصوره */
+.the-grand-museum p {
+    font-family: var(--font-body);
+    font-size: 16px;
+    width: 40%;
+    color: var(--secondary-color);
+    line-height: 1.6;
+    letter-spacing: .5px;
+}
+
+
+/* --- ده علشان تنعمل لينك --- */
+.read{
+    text-align: left;
+}
+
+/* --- زرار الـ Read More --- */
+.read button{
+    padding: 10px;
+    border: none;
+    background-color: var(--main-color);
+}    
+
+.read a {
+     text-decoration: none;
+     color: black;
+     font-size: 15px;
+} 
+
+/* البتاعه الزرقا */
+.category-badge {
+    background-color: #8EB8E0;
+    color: var(--text-color);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-top: 70px;
+}
+/* باين انه عنوان صح ؟ */
+.the-grand-museum h1,.the-coptic-museum h1 {
+    font-family: var(--font-heading);
+    font-size: 60px;
+    width: 60%;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
 
 /* العنوان الكبير النص اللي فوق  */
 .main-title {
@@ -41,22 +112,6 @@ body {
 }
 
 
-.the-grand-museum {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Images/The-Grand-Egyptian-Museum.jpg');
-}
-
-.the-coptic-museum{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Images/GD-EG-Caire-MuséeIslam001.jpg');
-}
-/* الكلام اللي في الصوره */
-.the-grand-museum p ,.the-coptic-museum p{
-    font-family: var(--font-body);
-    font-size: 16px;
-    width: 40%;
-    color: var(--secondary-color);
-    line-height: 1.6;
-    letter-spacing: .5px;
-}
 
 
 /* --- ده علشان تنعمل لينك --- */
@@ -173,6 +228,7 @@ hr {
 }
 
 
+
 @media (max-width: 768px) {
     
     .main-title {
@@ -188,21 +244,9 @@ hr {
         margin-right: 20px;
     }
 
-    .the-grand-museum ,.the-coptic-museum {
-        padding: 20px;
-         gap: 20px;
-         min-height: 350px;
-    }
+    
 
-    .the-grand-museum h1,.the-coptic-museum h1 {
-        font-size: 32px;
-        width: 100%;
-    }
-
-    .the-grand-museum p ,.the-coptic-museum p{
-        width: 100%;
-        font-size: 15px;
-    }
+    
 
     .category-badge{
         margin-top: 30px;
