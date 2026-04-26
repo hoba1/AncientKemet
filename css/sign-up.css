@@ -1,0 +1,145 @@
+/* ── Layout ── */
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ── Card ── */
+.card {
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid #D4AF3744; /* gold border, semi-transparent */
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+}
+
+/* ── Title ── */
+.title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.title h1 {
+    font-family: var(--font-heading);
+    font-size: 34px;
+    color: var(--main-color);
+}
+
+.title .subtitle {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--secondary-color);
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+
+/* ── Fields ── */
+.field {
+    margin-bottom: 18px;
+}
+
+.field label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+}
+
+.field input {
+    width: 100%;
+    padding: 13px 16px;
+    background-color: var(--background-color); /* matches page bg */
+    border: 1px solid #D4AF3733;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: var(--font-body);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* gold border + glow on focus */
+.field input:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 3px #D4AF3720;
+}
+
+.field input::placeholder {
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+
+
+
+/* ── Sign up button ── */
+.signup-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #d7aa15f3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+.signup-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.signup-btn:hover  { background-color: rgb(185, 146, 17); }
+.signup-btn:active { transform: scale(0.98); }
+
+/* ── Separator ── */
+.separator {
+    height: 1px;
+    background-color: #D4AF3733;
+    margin: 24px 0 16px;
+}
+
+/* ── Bottom text ── */
+.bottom-text {
+    text-align: center;
+    font-size: 13px;
+    color: var(--secondary-color);
+}
+
+.bottom-text a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.error-msg {
+    display: none;
+    color: red;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.back-link {
+    font-size: 27px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--main-color);  /* turns gold on hover */
+}
+
