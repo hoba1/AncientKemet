@@ -57,17 +57,13 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.575);
     width: 300px;
+    transition:  transform 0.3s;
 }
 .card:hover::before {
     left: 100%;
 }
 
 .card:hover {
-    /* transform: translateY(-15px) scale(1.02); */
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.4),
-        0 0 20px rgba(212, 175, 55, 0.1);
-    background: rgba(255, 255, 255, 0.08);
     transform: translateY(-5px);
 }
 
