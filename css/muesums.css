@@ -27,11 +27,9 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Images/The-Grand-Egyptian-Museum.jpg');
 }
 
-.the-coptic-museum{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Images/GD-EG-Caire-MuséeIslam001.jpg');
-}
+
 /* الكلام اللي في الصوره */
-.the-grand-museum p {
+.the-grand-museum p ,.the-coptic-museum p{
     font-family: var(--font-body);
     font-size: 16px;
     width: 40%;
@@ -226,7 +224,6 @@ hr {
     gap: 30px;
     flex-wrap: wrap; /* عشان لو الشاشة صغرت، الكروت تنزل تحت بعض بدل ما تخرجش بره*/
 }
-
 
 
 @media (max-width: 768px) {
