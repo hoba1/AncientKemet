@@ -24,12 +24,12 @@ body {
 }
 
 .the-grand-museum {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../Images/The-Grand-Egyptian-Museum.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./Images/The-Grand-Egyptian-Museum.jpg');
 }
 
 
 /* الكلام اللي في الصوره */
-.the-grand-museum p ,.the-coptic-museum p{
+.the-grand-museum p {
     font-family: var(--font-body);
     font-size: 16px;
     width: 40%;
@@ -70,7 +70,7 @@ body {
     margin-top: 70px;
 }
 /* باين انه عنوان صح ؟ */
-.the-grand-museum h1,.the-coptic-museum h1 {
+.the-grand-museum h1 {
     font-family: var(--font-heading);
     font-size: 60px;
     width: 60%;
