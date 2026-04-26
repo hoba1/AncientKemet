@@ -5,16 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
     />
     <title>AncientKemet | Login</title>
 </head>
 <body>
-    Login Page
-    <script src="./js/all.min.js"></script>
+
+
+
+
+<!-- Main card -->
+<div class="card">
+
+<a href="index.html" class="back-link" ><i class="fa-solid fa-house"></i></a>
+
+    <!-- Title -->
+    <div class="title">
+    <h1>Ancient Kemet</h1>
+    <p class="subtitle">Join the Archive</p>
+    </div>
+
+    <!-- Login form -->
+
+    <form id="login-form">
+    <div class="field">
+        <label for="email">Enter your email</label>
+        <div class="input">
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email"
+            autocomplete="email"
+        />
+        </div>
+        <span class="error-msg" id="email-error">Please enter your email.</span>
+    </div>
+
+    <div class="field">
+        <label for="password">Password</label>
+        <div class="input-wrap">
+        <input
+            name="password"
+            type="password"
+            id="password"
+            placeholder="password"
+        />
+        </div>
+        <span class="error-msg" id="password-error">Please enter your password.</span>
+    </div>
+
+    <div class="extras">
+        <!-- label wraps the checkbox so clicking the text also toggles it -->
+        <label class="remember">
+        <input type="checkbox" name="remember" />
+        Remember me
+        </label>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+    </div>
+
+    <!-- type="submit" triggers form submission when clicked -->
+    <button type="submit" class="signin-btn">Sign In</button>
+
+    </form>
+
+    
+    <div class="separator"></div>
+
+    <p class="bottom-text">
+    Doesn't Have an Account? <a href="sign-up.html">Sign Up</a>
+    </p>
+
+</div>
+
+
+
+
+    <script src="./js/login.js"></script>
 </body>
 </html>
