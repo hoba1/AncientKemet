@@ -58,6 +58,7 @@ body {
     width: 100%;
     padding: 13px 16px;
     background-color: var(--background-color); /* matches page bg */
+    color: var(--text-color); 
     border: 1px solid #D4AF3733;
     border-radius: 6px;
     font-size: 14px;
