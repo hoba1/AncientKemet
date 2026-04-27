@@ -24,7 +24,7 @@ body {
 }
 
 .the-grand-museum {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/The-Grand-Egyptian-Museum.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/The-Grand-Egyptian-Museum.jpg');
 }
 
 
