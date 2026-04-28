@@ -1,0 +1,159 @@
+
+body {
+    background-color: var(--background-color);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* ضروري جداً عشان يمنع شريط التمرير العرضي */
+}
+
+/* العنوان الكبير النص اللي فوق  */
+.main-title {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Noto Serif', serif;    /* ده نوع الخط اللي بيستخدم في العناوين الكبيرة */ 
+    line-height: 1.2;
+    color: var(--text-color);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    margin-left: 60px;
+
+}
+/* النص اللي تحت في العنوان  */
+.main-title .gold-text {
+    color: var(--main-color);
+    font-style: italic; 
+}
+/* شرح  الصفحه */
+.description-text {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    line-height: 1.6;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--text-color);
+    line-height: 1.8;
+    letter-spacing: .5px;
+    text-align: left;
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: 60px;
+}
+.events {
+    padding: 50px 20px;
+    background-color: var(--bg-card);
+}
+
+.events .container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.event-card {
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  height: 480px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.event-image {
+  position: relative;
+  height: 200px;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 40%,
+    rgba(15,12,6,0.9) 100%
+  );
+}
+
+.event-card .badge,
+.event-card .date {
+  position: absolute;
+  top: 12px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 12px;
+}
+
+.event-card .badge {
+  left: 12px;
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
+.event-card .date {
+  right: 12px;
+  background: rgba(0,0,0,0.6);
+  color: #F5EDD5;
+}
+
+.event-card .card-content {
+  padding: 16px;
+}
+
+.event-card .location {
+  font-size: 12px;
+  color: #c8a96e;
+  margin-bottom: 8px;
+}
+
+.event-card .title {
+  font-size: 18px;
+  font-family: var(--font-heading);
+  margin-bottom: 10px;
+}
+
+.event-card .desc {
+  font-size: 13px;
+  color: var(--text-color);
+  line-height: 1.5;
+  overflow: scroll;
+  margin-bottom: 15px;
+  max-width: 270px;
+  max-height: 113px;
+}
+
+::-webkit-scrollbar{
+    width: 2px;
+}
+
+.explore-container .main-btn {
+  margin-top: 25px;
+}
+
+.filter-bar {
+
+  background:var(--background-color);
+  padding:20px;
+  border-radius:25px;
+  display:flex;
+  gap:20px; 
+  align-items:center;
+  margin-bottom:30px; 
+  color:var(--main-color);
+}
+
+#typeFilter ,#monthFilter{
+  background:var(--background-color);
+  color:var(--text-color); 
+  border:1px solid #333; 
+  padding:5px 10px;
+}
