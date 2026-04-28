@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/events.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,9 +13,324 @@
       rel="stylesheet"
     />
     <title>AncientKemet | Events</title>
+    
 </head>
 <body>
-    Events Page
-    <script src="./js/all.min.js"></script>
+    <header>
+     <nav>
+      <div class="container">
+        <a href="./index.html" class="logo">Ancient Kemet</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./pyramids.html">Pyramids</a></li>
+          <li><a href="./tourguides.html">Tour Guide</a></li>
+          <li>
+            <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
+          </li>
+          <li>
+            <a href="./login.html"><button class="main-btn">Login</button></a>
+          </li>
+          <li>
+            <a href="./sign-up.html"
+              ><button class="main-btn">Sign Up</button></a
+            >
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    
+    
+
+</header>
+
+
+<main>
+    <h2 class="main-title">
+    Upcoming <br> <span class="gold-text">Events</span>
+     & Gatherings
+    </h2>
+    <p class="description-text">
+    Immerse yourself in curated exhibitions, expert-led lectures, and exclusive tours of the archive. Reserve your place in history. 
+    </p>
+    <section class="events">
+        
+      <h2 class="section-title">Upcoming Events</h2>
+
+
+        <div class="filter-bar">
+            <span>FILTER BY</span>
+            
+            <select id="monthFilter" onchange="applyFilter()" >
+                <option value="all">All Months</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="11">November</option>
+            </select>
+
+            <select id="typeFilter" onchange="applyFilter()" >
+                <option value="all">All Types</option>
+                <option value="lecture">Lectures</option>
+                <option value="tour">Tours</option>
+                <option value="exhibition">Exhibitions</option>
+            </select>
+
+            <div style="margin-left:auto">
+                Showing <span id="count">8</span> events
+            </div>
+        </div>
+
+
+      <div class="container">
+        <div class="event-card" data-type="lecture" data-month="05">
+          <div class="event-image">
+            <img src="./images/The Art of Ancient Egypt.jpg" alt="The Art of Ancient Egypt" />
+            <span class="badge">LECTURE</span>
+            <span class="date">May 20, 2026</span>
+          </div>
+
+          <div class="card-content">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i> Cairo & Luxor
+            </div>
+
+            <div class="title">The Art of Ancient Egypt</div>
+
+            <div class="desc">
+              A premium series of expert-led lectures and guided tours exploring the masterpieces of the pharaohs. Go beyond the surface to understand the symbolism, architecture, and techniques that defined 3,000 years of civilization.            </div>
+
+            <div class="main-btn">Add to Calendar</div>
+          </div>
+        </div>
+
+
+        <div class="event-card" data-type="tour" data-month="all">
+          <div class="event-image">
+            <img src="./images/Sound and Light Show.jpg" alt="Sound and Light Show" />
+            <span class="badge">Night Tour</span>
+            <span class="date">Multiple shows per evening</span>
+          </div>
+
+          
+          <div class="card-content">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i> Giza, Luxor, & Aswan.
+            </div>
+
+            <div class="title">Sound and Light Show</div>
+
+            <div class="desc">
+              Experience the magic of Ancient Egypt as iconic monuments are brought to life through a spectacular audio-visual performance. History is narrated through dramatic lighting and music under the stars.
+            </div>
+
+            <div class="main-btn">Add to Calendar</div>
+          </div>
+        </div>
+
+
+        <div class="event-card" data-type="exhibition" data-month="all">
+          <div class="event-image">
+            <img src="./images/The Grand Egyptian Museum.jpg" alt="The Grand Egyptian Museum" />
+            <span class="badge">Museum Exhibition</span>
+            <span class="date">Daily</span>
+          </div>
+
+          <div class="card-content">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>Giza Plateau, Cairo
+            </div>
+
+            <div class="title">The Grand Egyptian Museum </div>
+
+            <div class="desc">
+              Get an exclusive look at the world’s largest archaeological museum. This event features a curated tour of the Grand Staircase and the commercial gardens, showcasing colossal statues that haven't been seen by the public for decades.
+            </div>
+
+            <div class="main-btn">Add to Calendar</div>
+          </div>
+        </div>
+
+
+        <div class="event-card" data-type="exhibition" data-month="05">
+          <div class="event-image">
+            <img src="./images/Tutankhamun’s Treasures.jpg" alt="Tutankhamun's Treasures" />
+            <span class="badge">Special Exhibition</span>
+            <span class="date"> Starting May 2026</span>
+          </div>
+
+          <div class="card-content">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>Grand Egyptian Museum (GEM)
+            </div>
+
+            <div class="title">Tutankhamun’s Treasures</div>
+
+            <div class="desc">
+              A world-class exhibition featuring the complete collection of the Boy King. Explore over 5,000 artifacts, including the iconic gold mask and royal chariots, displayed in a state-of-the-art gallery.
+            </div>
+            <div class="main-btn">Add to Calendar</div>
+          </div>
+        </div>
+        
+        <div class="event-card" data-type="lecture" data-month="06">
+          <div class="event-image">
+            <img src="./images/Secrets of the Saqqara Tombs.jpg" alt="Secrets of the Saqqara Tombs" />
+            <span class="badge">Academic Lecture</span>
+            <span class="date"> June 10, 2026</span>
+          </div>
+
+          <div class="card-content">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>ARCE Center, Cairo
+            </div>
+
+            <div class="title">Secrets of the Saqqara Tombs</div>
+
+            <div class="desc">
+               An exclusive lecture by leading archaeologists on the latest discoveries in the Saqqara necropolis. Learn the stories behind the recently unearthed mummies and the "Lost Sun Temples."
+            </div>
+            <div class="main-btn">Add to Calendar</div>
+          </div>
+        </div>
+        
+        <div class="event-card" data-type="tour" data-month="all">
+          <div class="event-image">
+            <img src="./images/Felucca Heritage Sail.jpg" alt="Felucca Heritage Sail" />
+            <span class="badge">Cultural Tour</span>
+            <span class="date">Daily at Sunset</span>
+          </div>
+            
+          <div class="card-content">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>Nile River (Luxor & Aswan)
+            </div>
+
+            <div class="title">Felucca Heritage Sail</div>
+
+            <div class="desc">
+                A peaceful sunset tour on a traditional wooden sailboat along the Nile. Experience the river as the ancients did, with storytelling sessions about how the Nile shaped Egyptian civilization.
+            </div>
+            <div class="main-btn">Add to Calendar</div>
+          </div>
+        </div>
+
+        <div class="event-card" data-type="exhibition" data-month="06">
+          <div class="event-image">
+            <img src="./images/Egyptian Contemporary Art Exhibition.jpg" alt="Egyptian Contemporary Art Exhibition" />
+            <span class="badge">Art Exhibition</span>
+            <span class="date">June 15, 2026 </span>
+          </div>
+
+          <div class="card-content">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>Palace of Arts, Cairo Opera House
+            </div>
+
+            <div class="title">Art Cairo</div>
+
+            <div class="desc">
+                A unique exhibition showcasing the bridge between ancient symbolism and modern Egyptian art. This gallery features paintings and sculptures from Egypt’s top contemporary artists inspired by pharaonic heritage.
+            </div>
+            <div class="main-btn">Add to Calendar</div>
+          </div>
+        </div>
+
+        <div class="event-card" data-type="lecture" data-month="11">
+          <div class="event-image">
+            <img src="./images/Astronomy & The Pyramids Lecture.jpg" alt="Astronomy & The Pyramids Lecture" />
+            <span class="badge">Scientific Lecture</span>
+            <span class="date">November 5, 2026 </span>
+          </div>
+
+          <div class="card-content">
+            <div class="location">
+              <i class="fa-solid fa-location-dot"></i>Mena House, Giza
+            </div>
+
+            <div class="title">Pyramid Astronomy</div>
+
+            <div class="desc">
+                A fascinating lecture by world-renowned astronomers and Egyptologists. Explore how the Great Pyramids were perfectly aligned with the stars and the "Orion Correlation Theory."
+            </div>
+            <div class="main-btn">Add to Calendar</div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+      <div class="explore-container">
+        <a href="./events.html">
+          <button class="main-btn">Explore All Events</button>
+        </a>
+      </div>
+
+
+    </section>
+
+    
+          
+</main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">Egypt Heritage</h2>
+          <p>
+            Explore the legacy of ancient Egypt — history, culture, and timeless
+            wonders.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign-up.html">Sign Up</a></li>
+            <li><a href="./favorites.html">Favorites</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="./ancient-history.html">Ancient History</a></li>
+            <li><a href="./civilizations.html">Civilizations</a></li>
+            <li><a href="./pyramids.html">Pyramids</a></li>
+            <li><a href="./temples.html">Temples</a></li>
+            <li><a href="./museums.html">Museums</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>More</h3>
+          <ul>
+            <li><a href="./tourguides.html">Tour Guides</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Egypt Heritage. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    
+
+<script src="./js/main.js"></script>
+<script src="./js/events.js"></script>
 </body>
 </html>
