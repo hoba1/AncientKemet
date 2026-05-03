@@ -17,7 +17,7 @@ body {
 }
 
 /* Blog page specific */
-.blog-img {
+.blog div img {
   width: 100%;
   max-height: 350px;
   object-fit: contain;
