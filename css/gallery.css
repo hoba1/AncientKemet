@@ -1,0 +1,126 @@
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-color);
+}
+
+.hero span {
+    color: var(--main-color);
+}
+
+/* Filters */
+.filters {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filters button {
+    background: var(--bg-card);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filters button:hover,
+.filters .active {
+    background: var(--main-color);
+    color: black;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 50px;
+    margin: 0 auto;
+}
+
+/* Card */
+.card {
+    width: 300px;
+    background: var(--bg-card);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    aspect-ratio: 4 / 3;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+/* Image inside card */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Load button */
+.load {
+    text-align: center;
+    margin: 20px;
+}
+
+.load button {
+    background: var(--bg-card);
+    border: 1px solid #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.load button:hover {
+    background: var(--main-color);
+    color: black;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .filters button {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 25px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+}

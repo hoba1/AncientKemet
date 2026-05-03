@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,9 +13,115 @@
       rel="stylesheet"
     />
     <title>AncientKemet | Gallery</title>
-</head>
-<body>
-    Gallery Page
-    <script src="./js/all.min.js"></script>
-</body>
+  </head>
+  <body>
+
+        <nav>
+      <div class="container">
+        <a href="./index.html" class="logo">Ancient Kemet</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./pyramids.html">Pyramids</a></li>
+          <li><a href="./tourguides.html">Tour Guide</a></li>
+          <li>
+            <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
+          </li>
+          <li>
+            <a href="./login.html"><button class="main-btn">Login</button></a>
+          </li>
+          <li>
+            <a href="./sign-up.html"
+              ><button class="main-btn">Sign Up</button></a
+            >
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="hero">
+      <h1>The Grand <span>Exhibition</span></h1>
+
+      <p>
+        A curated visual archive documenting the architectural marvels, sacred
+        landscapes, and priceless artifacts of the golden age.
+      </p>
+    </section>
+
+    <div class="filters">
+      <button class="active">All Works</button>
+      <button>Pyramids</button>
+      <button>Temples</button>
+      <button>Artifacts</button>
+      <button>Landscapes</button>
+    </div>
+
+    <section class="gallery">
+      <div class="card"><img src="./images/temple.jpeg" /></div>
+      <div class="card"><img src="./images/temple2.jpeg" /></div>
+      <div class="card"><img src="./images/dkr.jpeg" /></div>
+      <div class="card"><img src="./images/mra_ws5a.jpeg" /></div>
+      <div class="card"><img src="./images/lol.jpeg" /></div>
+      <div class="card"><img src="./images/pyramids.jpeg" /></div>
+    </section>
+
+      <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">Ancient Kemet</h2>
+          <p>
+            Explore the legacy of ancient Egypt — history, culture, and timeless
+            wonders.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign-up.html">Sign Up</a></li>
+            <li><a href="./favorites.html">Favorites</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="./ancient-history.html">Ancient History</a></li>
+            <li><a href="./civilizations.html">Civilizations</a></li>
+            <li><a href="./pyramids.html">Pyramids</a></li>
+            <li><a href="./temples.html">Temples</a></li>
+            <li><a href="./museums.html">Museums</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>More</h3>
+          <ul>
+            <li><a href="./tourguides.html">Tour Guides</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ancient Kemet. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/gallery.js"></script>
+  </body>
 </html>
