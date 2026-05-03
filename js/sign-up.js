@@ -170,4 +170,5 @@ form.addEventListener("submit", function(e) {
     // alert() shows a popup message to the user
     // "+" joins strings together — called concatenation
     alert("Welcome, " + username + "! Your account has been created successfully.");
+    window.location.href = "./login.html"; // redirect to login page after successful sign-up
 });

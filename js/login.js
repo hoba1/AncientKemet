@@ -143,4 +143,5 @@ form.addEventListener("submit", function(e) {
     // alert() shows a popup message to the user
     // "+" joins strings together — called concatenation
     alert("Welcome back, " + username + "! You have signed in successfully.");
+    window.location.href = "./index.html"; // redirect to home page after successful login
 });
