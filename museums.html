@@ -1,23 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Museums</title>
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel ="stylesheet" href="css/muesums.css"/>
-</head>
+    <link rel="stylesheet" href="css/muesums.css" />
+  </head>
 
-<body>
-<nav>
+  <body>
+    <nav>
       <div class="container">
         <a href="./index.html" class="logo">Ancient Kemet</a>
         <ul class="nav-links">
@@ -31,12 +34,17 @@
           <li>
             <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
           </li>
-          <li>
+          <li class="login-btn">
             <a href="./login.html"><button class="main-btn">Login</button></a>
           </li>
-          <li>
+          <li class="signup-btn">
             <a href="./sign-up.html"
               ><button class="main-btn">Sign Up</button></a
+            >
+          </li>
+          <li class="logout-btn">
+            <a href="./index.html"
+              ><button class="main-btn">Logout</button></a
             >
           </li>
         </ul>
@@ -46,138 +54,144 @@
       </div>
     </nav>
 
-<main>
+    <main>
+      <h2 class="main-title">
+        The Grand <br />
+        <span class="gold-text">Repositories</span>
+      </h2>
+      <p class="description-text">
+        Explore the modern sanctuaries where ancient dynasties rest. These
+        <br />
+        archives preserve the gilded legacy of the pharaohs for eternity.
+      </p>
 
-     
+      <div class="the-grand-museum">
+        <span class="category-badge">FEATURED EXHIBITION</span>
+        <h1>The Grand Egyptian Museum</h1>
+        <p>
+          The crown jewel of modern curation. A monumental space dedicated
+          entirely to the legacy of ancient Egypt, housing the complete
+          Tutankhamun collection for the first time in history.
+        </p>
+        <div class="read">
+          <button>
+            <a
+              href="https://en.wikipedia.org/wiki/Grand_Egyptian_Museum"
+              target="_blank"
+              >Read More</a
+            >
+          </button>
+        </div>
+      </div>
 
-    
-    <h2 class="main-title">
-    The Grand <br> <span class="gold-text">Repositories</span>
-    </h2>
-    <p class="description-text">
-    Explore the modern sanctuaries where ancient dynasties rest. These <br>
-    archives preserve the gilded legacy of the pharaohs for eternity.
-    </p>
+      <div class="title">Prominent Collections</div>
+      <hr />
 
-    <div class="the-grand-museum">
-          <span class="category-badge">FEATURED EXHIBITION</span>       
-         <h1 >The Grand Egyptian Museum</h1>         
-          <p>
-             The crown jewel of modern curation. A monumental space dedicated entirely to the legacy of ancient Egypt, housing the complete Tutankhamun collection for the first time in history.
-          </p>  
-         <div class="read">
-                    <button><a href="https://en.wikipedia.org/wiki/Grand_Egyptian_Museum" target="_blank">Read More</a></button>
-         </div>
-       
-    </div>
+      <div class="cards-container">
+        <div class="museum-card">
+          <div class="card-image">
+            <img src="./images/The Grand Egyptian Museum.jpg" />
+          </div>
+          <!-- علشان اقسم الكارت نصين -->
 
-    <div class="title">Prominent Collections</div>
-    <hr>
-    
-  <div class="cards-container">
-
-
-    <div class="museum-card">
-        
-        <div class="card-image">
-          <img src="./images/The Grand Egyptian Museum.jpg"/>
-        </div><!-- علشان اقسم الكارت نصين -->
-        
-        <div class="card-content-box">
+          <div class="card-content-box">
             <h2 class="museum-title">The Egyptian Museum</h2>
             <p class="museum-desc">
-                The historic pink palace in Tahrir Square, containing the world's most extensive collection of pharaonic antiquities spanning 5,000 years.
+              The historic pink palace in Tahrir Square, containing the world's
+              most extensive collection of pharaonic antiquities spanning 5,000
+              years.
             </p>
-            
+          </div>
         </div>
 
-     </div>
+        <div class="museum-card">
+          <div class="card-image">
+            <img src="./images/The Coptic Museum.jpg" />
+          </div>
+          <!-- علشان اقسم الكارت نصين -->
 
-      <div class="museum-card">
-        
-        <div class="card-image">
-          <img src="./images/The Coptic Museum.jpg"/>
-        </div><!-- علشان اقسم الكارت نصين -->
-        
-        <div class="card-content-box">
+          <div class="card-content-box">
             <h2 class="museum-title">The Coptic Museum</h2>
             <p class="museum-desc">
-             Situated within the Roman fortress of Babylon in Old Cairo, this museum holds the largest collection of Coptic Christian artifacts in the world. It is famous for its beautiful stone carvings, intricate textiles (Coptic weaving), and ancient manuscripts.           </p>
-            
+              Situated within the Roman fortress of Babylon in Old Cairo, this
+              museum holds the largest collection of Coptic Christian artifacts
+              in the world. It is famous for its beautiful stone carvings,
+              intricate textiles (Coptic weaving), and ancient manuscripts.
+            </p>
+          </div>
         </div>
 
-     </div>
+        <div class="museum-card">
+          <div class="card-image">
+            <img src="./images/Fustat-Musseum.jpg" />
+          </div>
+          <!-- علشان اقسم الكارت نصين -->
 
-     <div class="museum-card">
-        
-        <div class="card-image">
-          <img src="./images/Fustat-Musseum.jpg"/>
-        </div><!-- علشان اقسم الكارت نصين -->
-        
-        <div class="card-content-box">
+          <div class="card-content-box">
             <h2 class="museum-title">Fustat Museum</h2>
             <p class="museum-desc">
-             he National Museum of Egyptian Civilization, now the permanent resting place of the Royal Mummies, offering a comprehensive view of Egyptian history.           </p>
-            
+              he National Museum of Egyptian Civilization, now the permanent
+              resting place of the Royal Mummies, offering a comprehensive view
+              of Egyptian history.
+            </p>
+          </div>
         </div>
 
-     </div>
+        <div class="museum-card">
+          <div class="card-image">
+            <img src="./images/Alexandria National Museum.jpg" />
+          </div>
+          <!-- علشان اقسم الكارت نصين -->
 
-     <div class="museum-card">
-        
-        <div class="card-image">
-          <img src="./images/Alexandria National Museum.jpg"/>
-        </div><!-- علشان اقسم الكارت نصين -->
-        
-        <div class="card-content-box">
+          <div class="card-content-box">
             <h2 class="museum-title">Alex National Museum</h2>
             <p class="museum-desc">
-             Located in a restored Italian-style villa, this museum narrates Alexandria's history through the Pharaonic, Graeco-Roman, Coptic, and Islamic eras. It also features a unique section for underwater antiquities discovered in the Mediterranean Sea.           </p>
-            
+              Located in a restored Italian-style villa, this museum narrates
+              Alexandria's history through the Pharaonic, Graeco-Roman, Coptic,
+              and Islamic eras. It also features a unique section for underwater
+              antiquities discovered in the Mediterranean Sea.
+            </p>
+          </div>
         </div>
 
-     </div>
+        <div class="museum-card">
+          <div class="card-image">
+            <img src="./images/Royal Jewelry Museum.jpg" />
+          </div>
+          <!-- علشان اقسم الكارت نصين -->
 
-     <div class="museum-card">
-        
-        <div class="card-image">
-          <img src="./images/Royal Jewelry Museum.jpg"/>
-        </div><!-- علشان اقسم الكارت نصين -->
-        
-        <div class="card-content-box">
+          <div class="card-content-box">
             <h2 class="museum-title">Royal Jewelry Museum</h2>
             <p class="museum-desc">
-             Housed in the glamorous palace of Princess Fatma Al-Zahra, this museum displays the private collections of the Muhammad Ali Dynasty. You can find diamond-encrusted crowns, gold tools, and precious medals that reflect the luxury of Egypt's former monarchy.    </p>
-            
+              Housed in the glamorous palace of Princess Fatma Al-Zahra, this
+              museum displays the private collections of the Muhammad Ali
+              Dynasty. You can find diamond-encrusted crowns, gold tools, and
+              precious medals that reflect the luxury of Egypt's former
+              monarchy.
+            </p>
+          </div>
         </div>
 
-     </div>
+        <div class="museum-card">
+          <div class="card-image">
+            <img src="./images/Museum of Islamic Art.jpg" />
+          </div>
+          <!-- علشان اقسم الكارت نصين -->
 
-     <div class="museum-card">
-        
-        <div class="card-image">
-          <img src="./images/Museum of Islamic Art.jpg"/>
-        </div><!-- علشان اقسم الكارت نصين -->
-        
-        <div class="card-content-box">
+          <div class="card-content-box">
             <h2 class="museum-title">Museum of Islamic Art</h2>
             <p class="museum-desc">
-             One of the most important museums of its kind globally, it is located in the heart of historic Cairo. It contains rare masterpieces of woodwork, ceramics, and textiles from across the Islamic world, showcasing the artistic evolution of Islamic science and calligraphy.          </p>
-            
+              One of the most important museums of its kind globally, it is
+              located in the heart of historic Cairo. It contains rare
+              masterpieces of woodwork, ceramics, and textiles from across the
+              Islamic world, showcasing the artistic evolution of Islamic
+              science and calligraphy.
+            </p>
+          </div>
         </div>
-
-
-        
-    
-
-
-     </div>
-
-
-  </div>    
-          
-</main>
-<footer class="footer">
+      </div>
+    </main>
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
           <h2 class="footer-logo">Ancient Kemet</h2>
@@ -225,10 +239,6 @@
         <p>© 2026 Ancient Kemet. All rights reserved.</p>
       </div>
     </footer>
-    <script src = "./js/main.js"></script>
-
-
-
-</body>
-
+    <script src="./js/main.js"></script>
+  </body>
 </html>
