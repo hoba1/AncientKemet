@@ -12,6 +12,124 @@
       rel="stylesheet"
     />
     <title>AncientKemet | Civilizations</title>
+
+    <style>
+      .hero {
+        height: 400px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--text-color);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin: 0;
+        text-align: center;
+      }
+
+      .hero h1 span {
+        color: var(--main-color);
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        text-align: center;
+        max-width: 600px;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+      }
+
+      .civilizations {
+        padding: 50px 20px;
+        background-color: var(--background-color);
+      }
+
+      .civilizations .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 30px;
+        margin-top: 40px;
+        justify-content: center;
+      }
+
+      .civilizations .layout-choose-container {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        gap: 10px;
+        color: var(--text-color);
+      }
+
+      .civilizations .layout-choose-container .layout-btn {
+        background-color: transparent;
+        border: 1px solid var(--main-color);
+        color: var(--text-color);
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
+      }
+
+      .civilizations .layout-choose-container .layout-btn.active,
+      .civilizations .layout-choose-container .layout-btn:hover {
+        background-color: var(--main-color);
+        color: #fff;
+      }
+
+      .civilization-card {
+        background-color: var(--bg-card);
+        color: var(--text-color);
+        border-top: 1px solid var(--main-color);
+        border-radius: 10px;
+        padding: 20px;
+        width: 400px;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      .civilization-card .civilization-card-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .civilization-card:hover {
+        transform: translateY(-5px);
+        box-shadow:
+          0 10px 20px rgba(212, 175, 55, 0.2),
+          0 10px 20px rgba(212, 175, 55, 0.2);
+      }
+
+      .civilization-card h3 {
+        margin: 0;
+        color: var(--main-color);
+        font-family: var(--font-heading);
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .civilization-card p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 0;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -42,6 +160,193 @@
         </div>
       </div>
     </nav>
+
+    <section class="hero">
+      <h1>Where <span>History</span> Was Born</h1>
+      <p>
+        Step into the story of ancient Egyptian civilizations, innovation,
+        power, and culture that still inspire the world today.
+      </p>
+    </section>
+
+    <section class="civilizations">
+      <h2 class="section-title">Civilizations of Egypt</h2>
+
+      <div class="layout-choose-container">
+        <p>shown:</p>
+        <button class="layout-btn active" data-layout="grid">
+          <i class="fa-solid fa-table-cells"></i>
+        </button>
+        <button class="layout-btn" data-layout="list">
+          <i class="fa-solid fa-list"></i>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">Prehistoric Egypt</p>
+              <h3 class="civilization-slogan">Origins of Civilization</h3>
+            </div>
+            <p class="civilization-period">Before 3100 BC</p>
+          </div>
+          <p class="civilization-desc">
+            Prehistoric Egypt marks the earliest stage of human settlement along
+            the Nile, where communities began forming agricultural societies and
+            developing basic tools and pottery. During this time, people learned
+            to cultivate crops, domesticate animals, and establish permanent
+            villages. These early developments laid the foundation for social
+            organization, trade, and cultural traditions that would later define
+            ancient Egyptian civilization.
+          </p>
+        </div>
+
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">Early Dynastic Period</p>
+              <h3 class="civilization-slogan">Unification of Egypt</h3>
+            </div>
+            <p class="civilization-period">3100 – 2686 BC</p>
+          </div>
+          <p class="civilization-desc">
+            The Early Dynastic Period began with the unification of Upper and
+            Lower Egypt under the first pharaoh, marking the birth of a
+            centralized Egyptian state. This era saw the establishment of the
+            capital at Memphis and the development of writing systems such as
+            hieroglyphics. Political structures, religious beliefs, and royal
+            traditions were formalized, creating the framework for the powerful
+            dynasties that followed.
+          </p>
+        </div>
+
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">Old Kingdom</p>
+              <h3 class="civilization-slogan">Age of Pyramids</h3>
+            </div>
+            <p class="civilization-period">2686 – 2181 BC</p>
+          </div>
+          <p class="civilization-desc">
+            The Old Kingdom is often called the "Age of the Pyramids" due to the
+            construction of monumental structures such as the Great Pyramid of
+            Giza. During this time, Egypt enjoyed political stability and strong
+            centralized rule under powerful pharaohs. Advances in architecture,
+            engineering, and art flourished, while religion played a central
+            role in society, emphasizing the divine nature of the king and the
+            importance of the afterlife.
+          </p>
+        </div>
+
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">First Intermediate Period</p>
+              <h3 class="civilization-slogan">Time of Instability</h3>
+            </div>
+            <p class="civilization-period">2181 – 2055 BC</p>
+          </div>
+          <p class="civilization-desc">
+            The First Intermediate Period was a time of political fragmentation
+            and economic decline. Central authority weakened, and local rulers
+            gained power, leading to internal conflicts and instability. Despite
+            these challenges, this period saw cultural developments and the
+            spread of artistic expression beyond royal courts, reflecting a more
+            diverse and localized society.
+          </p>
+        </div>
+
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">Middle Kingdom</p>
+              <h3 class="civilization-slogan">Golden Age of Stability</h3>
+            </div>
+            <p class="civilization-period">2055 – 1650 BC</p>
+          </div>
+          <p class="civilization-desc">
+            The Middle Kingdom restored stability and centralized governance in
+            Egypt. It is often considered a golden age of literature, art, and
+            architecture. Pharaohs focused on improving irrigation systems and
+            expanding agriculture, strengthening the economy. This era also saw
+            military campaigns to secure borders and increased attention to the
+            welfare of the people.
+          </p>
+        </div>
+
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">Second Intermediate Period</p>
+              <h3 class="civilization-slogan">Foreign Rule</h3>
+            </div>
+            <p class="civilization-period">1650 – 1550 BC</p>
+          </div>
+          <p class="civilization-desc">
+            During the Second Intermediate Period, Egypt experienced foreign
+            invasion and rule by the Hyksos, who introduced new technologies
+            such as horse-drawn chariots and advanced weaponry. The country was
+            divided, with weakened central authority. However, this period also
+            set the stage for future military advancements that would help Egypt
+            reclaim its power.
+          </p>
+        </div>
+
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">New Kingdom</p>
+              <h3 class="civilization-slogan">Empire and Power</h3>
+            </div>
+            <p class="civilization-period">1550 – 1070 BC</p>
+          </div>
+          <p class="civilization-desc">
+            The New Kingdom represents the height of ancient Egypt’s power and
+            expansion. Pharaohs such as Ramses II and Hatshepsut led military
+            campaigns and monumental building projects. Egypt became a vast
+            empire, controlling territories beyond its borders. This era is also
+            known for grand temples, the Valley of the Kings, and significant
+            cultural and religious developments.
+          </p>
+        </div>
+
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">Late Period</p>
+              <h3 class="civilization-slogan">Decline and Invasions</h3>
+            </div>
+            <p class="civilization-period">664 – 332 BC</p>
+          </div>
+          <p class="civilization-desc">
+            The Late Period was marked by repeated invasions from foreign powers
+            such as the Assyrians and Persians. Although there were attempts to
+            restore Egypt’s independence and cultural identity, political
+            instability persisted. Despite this, traditional art, religion, and
+            customs continued to thrive, preserving Egypt’s rich heritage.
+          </p>
+        </div>
+
+        <div class="civilization-card">
+          <div class="civilization-card-top">
+            <div>
+              <p class="civilization-title">Ptolemaic Period</p>
+              <h3 class="civilization-slogan">Greek Influence</h3>
+            </div>
+            <p class="civilization-period">332 – 30 BC</p>
+          </div>
+          <p class="civilization-desc">
+            The Ptolemaic Period began with the conquest of Egypt by Alexander
+            the Great and continued under Greek rulers. Alexandria became a
+            major center of learning and culture, home to the famous Library of
+            Alexandria. Greek and Egyptian traditions blended, creating a unique
+            cultural and scientific environment until the Roman conquest.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer-container">
@@ -92,6 +397,7 @@
       </div>
     </footer>
 
+    <script src="./js/civilizations.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
