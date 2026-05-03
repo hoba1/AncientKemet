@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let savedLayout = localStorage.getItem("civilization layout");
+  let savedLayout = sessionStorage.getItem("civilization layout");
     if (savedLayout) {
         let layoutBtn = document.querySelector(`.layout-btn[data-layout="${savedLayout}"]`);
         if (layoutBtn) {
@@ -26,7 +26,7 @@ layoutbtn.forEach((btn) => {
       activeBtn.classList.remove("active");
     }
     this.classList.add("active");
-    localStorage.setItem("civilization layout", layout);
+    sessionStorage.setItem("civilization layout", layout);
     if (layout === "grid") {
       civilizationsContainer.style.flexDirection = "row";
       civilizationCard.forEach((card) => {
