@@ -103,7 +103,7 @@ body {
 
 #title {
   color: var(--main-color);
-  font-size: 2rem;
+  font-size: 32px;
   margin: 20px 0 10px;
 }
 
@@ -111,14 +111,14 @@ body {
   color: var(--text-color);
   line-height: 1.9;
   white-space: pre-line;
-  font-size: 1.05rem;
+  font-size: 17px;
 }
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVE */
 
 @media (max-width: 900px) {
   #title {
-    font-size: 1.6rem;
+    font-size: 26px;
   }
 
   .blog-img {
@@ -133,11 +133,11 @@ body {
   }
 
   #title {
-    font-size: 1.3rem;
+    font-size: 21px;
   }
 
   #content {
-    font-size: 0.97rem;
+    font-size: 16px;
   }
 
   .blog-img {
