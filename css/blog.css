@@ -5,7 +5,7 @@ body {
   color: var(--text-color);
 }
 
-.container {
+.blog .container {
   width: 85%;
   margin: auto;
   padding: 40px 0;
