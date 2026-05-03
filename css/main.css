@@ -271,11 +271,15 @@ nav .menu-toggle:hover {
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   max-width: 1100px;
   margin: auto;
+}
+
+.footer-col {
+  flex: 1 1 200px; /* grow | shrink | basis */
 }
 
 .footer-col h3 {
@@ -326,14 +330,14 @@ nav .menu-toggle:hover {
 }
 
 @media (max-width: 900px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
+  .footer-col {
+    flex: 1 1 calc(50% - 15px); /* 2 columns, accounting for gap */
   }
 }
 
 @media (max-width: 500px) {
-  .footer-container {
-    grid-template-columns: 1fr;
+  .footer-col {
+    flex: 1 1 100%;
     text-align: center;
   }
 
