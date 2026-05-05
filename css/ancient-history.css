@@ -1,22 +1,19 @@
-/* ═══════════════════════════════
-   BASE
-═══════════════════════════════ */
+/* BASE */
 body {
   font-family: var(--font-body);
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
+section {
+  padding: 80px 60px;
+}
 
-section { padding: 80px 60px; }
-
-/* ═══════════════════════════════
-   PILLARS
-═══════════════════════════════ */
+/* PILLARS */
 .pillars-section {
   background-color: var(--bg-card);
-  border-top: 1px solid #D4AF3718;
-  border-bottom: 1px solid #D4AF3718;
+  border-top: 1px solid #d4af3718;
+  border-bottom: 1px solid #d4af3718;
 }
 
 .pillars-grid,
@@ -34,14 +31,16 @@ section { padding: 80px 60px; }
   padding: 36px 24px;
   border-radius: 10px;
   text-align: center;
-  border: 1px solid #D4AF3722;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #d4af3722;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .pillar-card:hover,
 .article-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px #D4AF3720;
+  box-shadow: 0 10px 30px #d4af3720;
 }
 
 .pillar-icon {
@@ -58,7 +57,9 @@ section { padding: 80px 60px; }
   margin: 0 0 10px;
 }
 
-.pillar-card h3 { font-size: 18px; }
+.pillar-card h3 {
+  font-size: 18px;
+}
 
 .pillar-card p,
 .timeline-card p,
@@ -67,9 +68,7 @@ section { padding: 80px 60px; }
   line-height: 1.7;
 }
 
-/* ═══════════════════════════════
-   TIMELINE
-═══════════════════════════════ */
+/* TIMELINE */
 .timeline-subtitle {
   text-align: center;
   font-size: 15px;
@@ -129,23 +128,25 @@ section { padding: 80px 60px; }
   width: 2px;
   flex: 1;
   min-height: 60px;
-  background: linear-gradient(to bottom, var(--main-color), #D4AF3730);
+  background: linear-gradient(to bottom, var(--main-color), #d4af3730);
   margin-top: 4px;
 }
 
 .timeline-card {
   flex: 1;
   background: var(--bg-card);
-  border: 1px solid #D4AF3722;
+  border: 1px solid #d4af3722;
   border-radius: 10px;
   padding: 20px 24px;
   margin-bottom: 20px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .timeline-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px #D4AF3718;
+  box-shadow: 0 8px 28px #d4af3718;
 }
 
 .timeline-card h3 {
@@ -160,15 +161,13 @@ section { padding: 80px 60px; }
   margin: 0;
 }
 
-/* ═══════════════════════════════
-   QUOTE
-═══════════════════════════════ */
+/* QUOTE */
 .quote-banner {
   text-align: center;
   padding: 70px 80px;
-  background: linear-gradient(135deg, #D4AF3712, #C8A96E08);
-  border-top: 1px solid #D4AF3725;
-  border-bottom: 1px solid #D4AF3725;
+  background: linear-gradient(135deg, #d4af3712, #c8a96e08);
+  border-top: 1px solid #d4af3725;
+  border-bottom: 1px solid #d4af3725;
 }
 
 .quote-banner blockquote {
@@ -189,12 +188,10 @@ section { padding: 80px 60px; }
   letter-spacing: 1px;
 }
 
-/* ═══════════════════════════════
-   ARTICLES
-═══════════════════════════════ */
+/* ARTICLES */
 .articles-section {
   background-color: var(--bg-card);
-  border-top: 1px solid #D4AF3718;
+  border-top: 1px solid #d4af3718;
 }
 
 .article-card {
@@ -203,11 +200,15 @@ section { padding: 80px 60px; }
   background: var(--background-color);
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #D4AF3718;
-  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #d4af3718;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
-.card-image { position: relative; }
+.card-image {
+  position: relative;
+}
 
 .card-image img {
   width: 100%;
@@ -230,7 +231,9 @@ section { padding: 80px 60px; }
   border-radius: 4px;
 }
 
-.card-body { padding: 22px; }
+.card-body {
+  padding: 22px;
+}
 
 .card-body h3 {
   font-size: 16px;
@@ -254,26 +257,58 @@ section { padding: 80px 60px; }
   transition: gap 0.2s;
 }
 
-.read-link:hover { gap: 12px; }
+.read-link:hover {
+  gap: 12px;
+}
 
-/* ═══════════════════════════════
-   MEDIA QUERIES
-═══════════════════════════════ */
+/* MEDIA QUERIES */
 @media (max-width: 992px) {
-  .pillars-grid, .articles-grid { flex-direction: column; }
-  .pillar-card, .article-card   { flex: 1 1 100%; }
+  .pillars-grid,
+  .articles-grid {
+    flex-direction: column;
+  }
+  .pillar-card,
+  .article-card {
+    flex: 1 1 100%;
+  }
 }
 
 @media (max-width: 768px) {
-  section { padding: 60px 20px; }
-  .timeline-item { gap: 10px; }
-  .timeline-left { flex: 0 0 80px; }
-  .timeline-date { font-size: 10px; }
+  section {
+    padding: 60px 20px;
+  }
+  .timeline-item {
+    gap: 10px;
+  }
+  .timeline-left {
+    flex: 0 0 80px;
+  }
+  .timeline-date {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 540px) {
-  .timeline-item   { flex-direction: column; gap: 6px; }
-  .timeline-left   { flex: unset; width: 100%; text-align: left; padding-top: 0; }
-  .timeline-center { flex-direction: row; gap: 8px; align-items: center; margin: 6px 0; }
-  .timeline-line   { width: 40px; height: 2px; min-height: unset; margin-top: 0; }
+  .timeline-item {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .timeline-left {
+    flex: unset;
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+  }
+  .timeline-center {
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    margin: 6px 0;
+  }
+  .timeline-line {
+    width: 40px;
+    height: 2px;
+    min-height: unset;
+    margin-top: 0;
+  }
 }
