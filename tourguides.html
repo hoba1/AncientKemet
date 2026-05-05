@@ -7,14 +7,344 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/tourguides.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <title>AncientKemet | Tour Guides</title>
 </head>
 <body>
-    Tour Guides Page
-    <script src="./js/all.min.js"></script>
+
+  <nav>
+    <div class="container">
+      <a href="./index.html" class="logo">Ancient Kemet</a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./pyramids.html">Pyramids</a></li>
+        <li><a href="./tourguides.html">Tour Guide</a></li>
+        <li><a href="./favorites.html"><i class="fa-regular fa-heart"></i></a></li>
+        <li><a class="theme-btn"><i class="fa-regular fa-moon"></i></a></li>
+        <li><a href="./login.html"><button class="main-btn">Login</button></a></li>
+        <li><a href="./sign-up.html"><button class="main-btn">Sign Up</button></a></li>
+      </ul>
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="container">
+      <p class="hero-title">Expert Guides</p>
+      <h1 class="hero-slogan">Your Journey, Our Story</h1>
+      <p class="hero-desc">
+        Discover Egypt's secrets with certified Egyptologists and passionate local guides
+        who bring every stone, hieroglyph, and legend to life.
+      </p>
+      <p class="quote">"To walk Egypt with a guide is to walk with history itself."</p>
+    </div>
+  </section>
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-num">48+</span>
+      <span class="stat-label">Expert Guides</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">120+</span>
+      <span class="stat-label">Tours Offered</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">12k</span>
+      <span class="stat-label">Happy Travelers</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">15</span>
+      <span class="stat-label">Languages Spoken</span>
+    </div>
+  </div>
+  <section class="guides">
+    <h2 class="section-title">Meet Our Guides</h2>
+    <div class="container">
+      <div class="guide-card">
+        <div class="guide-img-wrap">
+          <img src="./images/card-gide1.jpg" alt="Dr. Amira Hassan" />
+          <span class="guide-specialty">Egyptologist</span>
+          <span class="guide-availability">Available</span>
+        </div>
+        <div class="guide-body">
+          <div class="guide-name">Dr. Amira Hassan</div>
+          <div class="guide-location"><i class="fa-solid fa-location-dot"></i> Luxor, Egypt</div>
+          <div > <span>(128 reviews)</span></div>
+          <p class="guide-bio">PhD in Egyptology from Cairo University. Specializes in New Kingdom temples and hieroglyphic inscriptions at Karnak and Luxor.</p>
+          <div class="guide-langs">
+            <span class="lang-tag">Arabic</span>
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">French</span>
+          </div>
+          <div class="guide-footer">
+            <div class="guide-price">$85 <span>/ hour</span></div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-img-wrap">
+          <img src="./images/card-gide2.jpg" alt="Karim El-Masry" />
+          <span class="guide-specialty">Pyramid Expert</span>
+          <span class="guide-availability">Available</span>
+        </div>
+        <div class="guide-body">
+          <div class="guide-name">Karim El-Masry</div>
+          <div class="guide-location"><i class="fa-solid fa-location-dot"></i> Giza, Egypt</div>
+          <div > <span>(204 reviews)</span></div>
+          <p class="guide-bio">Third-generation guide with 20 years at Giza. Expert in pyramid construction theories, the Sphinx, and the Old Kingdom era.</p>
+          <div class="guide-langs">
+            <span class="lang-tag">Arabic</span>
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">German</span>
+          </div>
+          <div class="guide-footer">
+            <div class="guide-price">$70 <span>/ hour</span></div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-img-wrap">
+          <img src="./images/card-gide3.jpg" alt="Nour Farouk" />
+          <span class="guide-specialty">Museum Guide</span>
+          <span class="guide-availability">Available</span>
+        </div>
+        <div class="guide-body">
+          <div class="guide-name">Nour Farouk</div>
+          <div class="guide-location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</div>
+          <div> <span>(89 reviews)</span></div>
+          <p class="guide-bio">Former Egyptian Museum curator. Brings Tutankhamun's treasures and the Grand Egyptian Museum's masterpieces to vivid life.</p>
+          <div class="guide-langs">
+            <span class="lang-tag">Arabic</span>
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">Italian</span>
+          </div>
+          <div class="guide-footer">
+            <div class="guide-price">$60 <span>/ hour</span></div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-img-wrap">
+          <img src="./images/card-gide4.jpg" alt="Youssef Taha" />
+          <span class="guide-specialty">Desert & Tombs</span>
+          <span class="guide-availability">Available</span>
+        </div>
+        <div class="guide-body">
+          <div class="guide-name">Youssef Taha</div>
+          <div class="guide-location"><i class="fa-solid fa-location-dot"></i> Aswan, Egypt</div>
+          <div > <span>(167 reviews)</span></div>
+          <p class="guide-bio">Specialist in Valley of the Kings, royal tombs, and ancient burial rites. Fluent in hieroglyphic reading for tour groups.</p>
+          <div class="guide-langs">
+            <span class="lang-tag">Arabic</span>
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">Spanish</span>
+          </div>
+          <div class="guide-footer">
+            <div class="guide-price">$75 <span>/ hour</span></div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide-card">
+        <div class="guide-img-wrap">
+          <img src="./images/card-gide5.jpg" alt="Salma Ibrahim" />
+          <span class="guide-specialty">Night Tours</span>
+          <span class="guide-availability">Available</span>
+        </div>
+        <div class="guide-body">
+          <div class="guide-name">Salma Ibrahim</div>
+          <div class="guide-location"><i class="fa-solid fa-location-dot"></i> Luxor, Egypt</div>
+          <div > <span>(311 reviews)</span></div>
+          <p class="guide-bio">Renowned for theatrical night tours at Karnak. Uses storytelling, sound, and atmosphere to recreate ancient Egyptian rituals.</p>
+          <div class="guide-langs">
+            <span class="lang-tag">Arabic</span>
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">Japanese</span>
+          </div>
+          <div class="guide-footer">
+            <div class="guide-price">$90 <span>/ hour</span></div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-img-wrap">
+          <img src="./images/card-gide6.jpg" alt="Omar Mansour" />
+          <span class="guide-specialty">Temple Expert</span>
+          <span class="guide-availability">Available</span>
+        </div>
+        <div class="guide-body">
+          <div class="guide-name">Omar Mansour</div>
+          <div class="guide-location"><i class="fa-solid fa-location-dot"></i> Abu Simbel, Egypt</div>
+          <div > <span>(76 reviews)</span></div>
+          <p class="guide-bio">Expert in Ramessid architecture and Abu Simbel's astronomical alignments. Makes the story of Ramses II unforgettable.</p>
+          <div class="guide-langs">
+            <span class="lang-tag">Arabic</span>
+            <span class="lang-tag">English</span>
+            <span class="lang-tag">Russian</span>
+          </div>
+          <div class="guide-footer">
+            <div class="guide-price">$65 <span>/ hour</span></div>
+            <button class="book-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="explore-container">
+      <button class="main-btn">Load More Guides</button>
+    </div>
+  </section>
+  <section class="featured">
+    <h2 class="section-title">Guide of the Month</h2>
+    <div class="container">
+      <div class="featured-img-wrap">
+        <img src="./images/card-gide1.jpg" alt="Featured Guide" />
+        <span class="featured-badge"> Top Rated</span>
+      </div>
+      <div class="featured-content">
+        <p class="featured-label">Featured Guide</p>
+        <h2 class="featured-name">Dr.Amira Hassan</h2>
+        <p class="featured-role">Senior Egyptologist ·15 Years Experience</p>
+        <p class="featured-bio">
+          Dr. Amira Hassan has dedicated her life to uncovering and sharing the mysteries of ancient Egypt.
+          With a PhD from Cairo University and over 15 years leading tours across Luxor, Karnak, and the
+          Valley of the Kings, she brings an unmatched depth of knowledge — and genuine passion — to every
+          journey. Her tours blend academic insight with vivid storytelling, making even the most complex
+          hieroglyphic narratives feel alive.
+        </p>
+        <div class="featured-stats">
+          <div class="f-stat">
+            <span class="f-stat-n">128</span>
+            <span class="f-stat-l">Reviews</span>
+          </div>
+          <div class="f-stat">
+            <span class="f-stat-n">5.0</span>
+            <span class="f-stat-l">Rating</span>
+          </div>
+          <div class="f-stat">
+            <span class="f-stat-n">3</span>
+            <span class="f-stat-l">Languages</span>
+          </div>
+          <div class="f-stat">
+            <span class="f-stat-n">15</span>
+            <span class="f-stat-l">Years Exp.</span>
+          </div>
+        </div>
+        <div class="featured-cta">
+          <button class="main-btn">Book Dr. Amira</button>
+          <button class="main-btn outline">View Profile</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials">
+    <h2 class="section-title">What Travelers Say</h2>
+    <div class="container">
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          Karim didn't just show us the pyramids — he made us feel like we were standing in the Old Kingdom.
+          His knowledge of construction techniques and the pharaoh's vision was staggering.
+        </p>
+        <div class="testimonial-author">
+          <div class="t-avatar">JM</div>
+          <div>
+            <div class="t-name">James Mitchell</div>
+            <div class="t-origin">🇬🇧 United Kingdom</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          Dr. Amira translated the hieroglyphs on the temple walls for us in real time — it was like
+          watching a secret message from 3,000 years ago being decoded right before our eyes.
+        </p>
+        <div class="testimonial-author">
+          <div class="t-avatar">SC</div>
+          <div>
+            <div class="t-name">Sophie Chen</div>
+            <div class="t-origin">🇺🇸 United States</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          Salma's night tour at Karnak was the most magical experience of my life. Torchlit columns,
+          ancient chants, and stories that sent chills down my spine — absolutely unforgettable.
+        </p>
+        <div class="testimonial-author">
+          <div class="t-avatar">LR</div>
+          <div>
+            <div class="t-name">Lucia Rossi</div>
+            <div class="t-origin">🇮🇹 Italy</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Walk Through History?</h2>
+      <p>Browse our certified guides and book your private or group tour across Egypt's most iconic sites.</p>
+      <div class="cta-buttons">
+        <a href="./contact-us.html" class="main-btn">Book a Guide</a>
+        <a href="./locations.html" class="main-btn outline">Explore Destinations</a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h2 class="footer-logo">Egypt Heritage</h2>
+        <p>Explore the legacy of ancient Egypt — history, culture, and timeless wonders.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./sign-up.html">Sign Up</a></li>
+          <li><a href="./favorites.html">Favorites</a></li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="./ancient-history.html">Ancient History</a></li>
+          <li><a href="./civilizations.html">Civilizations</a></li>
+          <li><a href="./pyramids.html">Pyramids</a></li>
+          <li><a href="./temples.html">Temples</a></li>
+          <li><a href="./museums.html">Museums</a></li>
+          <li><a href="./locations.html">Locations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>More</h3>
+        <ul>
+          <li><a href="./tourguides.html">Tour Guides</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
+          <li><a href="./events.html">Events</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Egypt Heritage. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>
