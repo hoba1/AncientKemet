@@ -4,14 +4,14 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* ضروري جداً عشان يمنع شريط التمرير العرضي */
+    
 }
 
 /* العنوان الكبير النص اللي فوق  */
 .main-title {
     font-size: 50px;
     font-weight: 600;
-    font-family: 'Noto Serif', serif;    /* ده نوع الخط اللي بيستخدم في العناوين الكبيرة */ 
+    font-family:var( --font-heading);    /* ده نوع الخط اللي بيستخدم في العناوين الكبيرة */ 
     line-height: 1.2;
     color: var(--text-color);
     text-transform: capitalize;
@@ -24,13 +24,12 @@ body {
     color: var(--main-color);
     font-style: italic; 
 }
-/* شرح  الصفحه */
+/* ده الكلام اللى تحت العناوان الكبير */
 .description-text {
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    line-height: 1.6;
+    font-family: var( --font-body);
     font-size: 17px;
     font-weight: 300;
     color: var(--text-color);
-    line-height: 1.8;
     letter-spacing: .5px;
     text-align: left;
     margin-top: 20px;
@@ -41,7 +40,27 @@ body {
     padding: 50px 20px;
     background-color: var(--bg-card);
 }
+/* ده العنوان اللى قبل الكردات */
+.section-title {
+  width: fit-content;
+  margin: 40px auto 24px;
+  font-size: 19px;
+  padding: 0.6em 1em;
+  letter-spacing: 0.06em;
+  font-family: var(--font-heading);
+  border-radius: 0.6em;
+  overflow: hidden;
+  border: 2px solid var(--main-color);
+  
+}
 
+.section-title:hover {
+  color: #b8860b;
+  border-color: var(--secondary-color);
+ 
+}
+
+/* ده لي div الكبير اللى شايل الكروت */
 .events .container {
     display: flex;
     gap: 30px;
@@ -51,10 +70,10 @@ body {
     flex-wrap: wrap;
 }
 
+/* ده لي كل كارت */
 .event-card {
   width: 300px;
   border-radius: 20px;
-  overflow: hidden;
   background: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-body);
@@ -62,28 +81,27 @@ body {
   box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
+/* ده علشان الزرار اللى في الكرت اللى بيفتح صفحه event */
+.event-card .main-btn {
+  text-decoration: none;
+}
+
+/* ده لي الصوره و التفصيل اللى عليها */
 .event-image {
   position: relative;
   height: 200px;
 }
 
+
+/* ده لي الصوره اللى في الكارت */
 .event-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.event-image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 40%,
-    rgba(15,12,6,0.9) 100%
-  );
-}
 
+/*  دول بيظبطوا الكلام اللى على الصوره*/
 .event-card .badge,
 .event-card .date {
   position: absolute;
@@ -93,28 +111,32 @@ body {
   border-radius: 12px;
 }
 
+/* ده علشان البادج */
 .event-card .badge {
   left: 12px;
   background: var(--main-color);
   color: var(--text-color);
 }
-
+ 
+/* ده علشان التاريخ */
 .event-card .date {
   right: 12px;
   background: rgba(0,0,0,0.6);
   color: #F5EDD5;
 }
 
+/* الكلام اللى تحت الصوره */
 .event-card .card-content {
   padding: 16px;
 }
-
+ /* مكان الحدث */
 .event-card .location {
   font-size: 12px;
   color: #c8a96e;
   margin-bottom: 8px;
 }
 
+/* العنوان بتاع الحدث */
 .event-card .title {
   font-size: 18px;
   font-family: var(--font-heading);
@@ -135,8 +157,15 @@ body {
     width: 2px;
 }
 
+::-webkit-scrollbar-corner{
+  background-color: var(--background-color);
+}
+
 .explore-container .main-btn {
-  margin-top: 25px;
+  margin-top: 50px;
+
+
+
 }
 
 .filter-bar {
@@ -157,3 +186,60 @@ body {
   border:1px solid #333; 
   padding:5px 10px;
 }
+.explore-container {
+    display: flex;         
+    justify-content: center; 
+
+}
+
+
+
+@media (max-width: 768px) {
+    
+    .nav-links {
+        display: none; 
+    }
+
+  
+    .main-title {
+        font-size: 2rem;
+        padding: 0 15px;
+    }
+
+    .description-text {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .filter-bar select {
+        width: 100%;
+        max-width: 300px;
+    }
+
+   
+
+    .event-card {
+        margin: 0 auto 20px;
+        max-width: 100%;
+    }
+
+    /* تعديل الفوتر */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+}
+
