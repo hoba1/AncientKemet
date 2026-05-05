@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AncientKemet | Contact Us</title>
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,10 +12,125 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>AncientKemet | Contact Us</title>
-</head>
-<body>
-    Contact Us Page
-    <script src="./js/all.min.js"></script>
-</body>
+    <link rel="stylesheet" href="./css/contact-us.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="./index.html" class="logo">Ancient Kemet</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./pyramids.html">Pyramids</a></li>
+          <li><a href="./tourguides.html">Tour Guide</a></li>
+          <li>
+            <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
+          </li>
+          <li class="login-btn">
+            <a href="./login.html"><button class="main-btn">Login</button></a>
+          </li>
+          <li class="signup-btn">
+            <a href="./sign-up.html"
+              ><button class="main-btn">Sign Up</button></a
+            >
+          </li>
+          <li class="logout-btn">
+            <a href="./index.html"><button class="main-btn">Logout</button></a>
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <section class="contact">
+      <!-- LEFT -->
+      <div class="left">
+        <h1>Contact Us</h1>
+        <p>
+          Have a question about ancient Egypt, our tours, or our exhibitions?<br />
+          We'd love to hear from you. Send us a message and we'll respond as
+          soon as possible.
+        </p>
+        <p>
+          location: Cairo, Egypt<br />
+          gmail: info@ancientkemet.com<br />
+          Tel: +20 100 000 0000
+        </p>
+
+        <div class="image-box">
+          <img src="./images/contact-us.png" alt="Contact Ancient Kemet" />
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="form-box">
+        <h2>Send a Message</h2>
+        <form id="contactForm">
+          <label>Name</label>
+          <input type="text" placeholder="Enter your name" required />
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter your email" required />
+
+          <label>Subject</label>
+          <input type="text" placeholder="What is this about?" required />
+
+          <label>Message</label>
+          <textarea placeholder="Write your message..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">Ancient Kemet</h2>
+          <p>
+            Explore the legacy of ancient Egypt — history, culture, and timeless
+            wonders.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign-up.html">Sign Up</a></li>
+            <li><a href="./favorites.html">Favorites</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="./ancient-history.html">Ancient History</a></li>
+            <li><a href="./pyramids.html">Pyramids</a></li>
+            <li><a href="./temples.html">Temples</a></li>
+            <li><a href="./museums.html">Museums</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>More</h3>
+          <ul>
+            <li><a href="./tourguides.html">Tour Guides</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Ancient Kemet. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>

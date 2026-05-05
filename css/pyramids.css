@@ -46,6 +46,7 @@ h1 {
 /* --- ده ال section اللى في كل الكروت --- */
 .pyramids-flex  {
     display:flex;
+    justify-content: center;
     gap: 25px;
     padding: 60px 8%;
 }
@@ -71,6 +72,7 @@ h1 {
 .card-img img  {
     width: 100%;
     height: 250px;
+    object-fit: cover;
 }
 
 
