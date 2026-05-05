@@ -1,4 +1,4 @@
-/* 1. تصفير الـ body تماماً عشان ميبوظش الـ Nav والـ Footer */
+/* --- تصفير الإعدادات الافتراضية للمتصفح --- */
 body {
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
 }
-
+/* --- زر الرجوع للخلف --- */
 .div-back-btn {
     padding: 20px 30px 0;
      color:var(--main-color);
      
 }
 .div-back-btn a {
-    text-decoration: none;
+    text-decoration: none;/* إلغاء الخط اللي تحت اللينك */
      color:var(--main-color);
 }
 
@@ -25,9 +25,10 @@ body {
     align-items: center;
     padding-bottom: 80px;
     margin-bottom: 60px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);/* خط بسيط بيفصل السكشن */
     background-color: var(--background-color);
 }
+/* --- المحتوى النصي في قسم الـ Hero --- */
 .content {
   margin: 0 15px 30px 30px;
 }
@@ -66,13 +67,13 @@ h1 {
     margin-bottom: 20px;
     color: var(--secondary-color);
 }
-
+/* --- حاوية مربعات الوقت --- */
 .countdown {
     display: flex;
     gap: 10px;
     margin-bottom: 25px;
 }
-
+/* --- تصميم مربع الوقت الواحد (يوم/ساعة/دقيقة) --- */
 .time-box {
     background-color: var(--background-color); 
     color: var(--text-color);
@@ -99,7 +100,7 @@ h1 {
 .narrative-section p ,h2{ 
   margin-left: 30px;
 }
-
+/* نص القصة ياخد مساحة أكبر */
 .narrative-text { flex: 2; }
 
 .narrative-text h2 {
@@ -107,14 +108,14 @@ h1 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
+/* --- حاوية الصور التوضيحية --- */
 .image-placeholders {
     display: flex;
     gap: 20px;
     margin-top: 30px;
     margin-left: 40px;
 }
-
+/* --- تنسيق مربعات الصور --- */
 .img-box {
     width: 200px;
     height: 200px;
@@ -135,12 +136,12 @@ h1 {
     margin-bottom: 30px;
     color: var(--secondary-color);
 }
-
+/* --- تنسيق أحداث الجدول الزمني --- */
 .timeline .event {
     position: relative;
     margin-bottom: 35px;
 }
-
+/* --- رسم النقطة (الدائرة) بجانب كل حدث --- */
 .timeline .event::before {
     content: '';
     position: absolute;
@@ -151,7 +152,7 @@ h1 {
     background-color: #e0e0e0;
     border-radius: 50%;
 }
-
+/* --- تمييز الحدث النشط (Active) --- */
 .timeline .event.active::before {
     background-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
