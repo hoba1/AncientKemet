@@ -1,11 +1,7 @@
 
 
-/* ===== Reset ===== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
+
 
 body {
   background-color: var(--background-color);
@@ -13,7 +9,7 @@ body {
   color: var(--text-color);
 }
 
-/* ===== Hero ===== */
+
 .hero {
   padding: 80px 40px;
   text-align: center;
@@ -53,69 +49,44 @@ body {
   line-height: 1.8;
 }
 
-/* ===== main-btn ===== */
-.main-btn {
-  font-family: var(--font-body);
-  display: inline-block;
-  padding: 0.5em 1.5em;
-  cursor: pointer;
-  border: 2px solid var(--main-color);
-  transition: all 0.4s;
-  font-size: 15px;
-  border-radius: 6px;
-  font-weight: 500;
-  color: var(--main-color);
-  background-color: transparent;
-}
 
-.main-btn:hover {
-  color: #fff;
-  background-color: var(--main-color);
-}
+
+
 .card img {
   width: 100%;
-  height: 200px;        /* ارتفاع ثابت لكل الصور */
-  object-fit: cover;    /* تتقص من الوسط من غير تشويه */
-  object-position: center;
-  /* display: block; */
+  height: 200px;       
+     
+  
+
 }
 
 
-/* ===== Section Title ===== */
+/*  Section Title  */
 .section-title {
   width: fit-content;
   margin: 40px auto 24px;
   font-size: 19px;
-  padding: 0.6em 1em;
-  letter-spacing: 0.06em;
-  position: relative;
+ 
+
+  
   font-family: var(--font-heading);
   border-radius: 0.6em;
   overflow: hidden;
   transition: all 0.3s;
   border: 2px solid var(--main-color);
-  background: linear-gradient(
-    to right,
-    rgba(212, 175, 55, 0.12) 1%,
-    transparent 40%,
-    transparent 60%,
-    rgba(212, 175, 55, 0.12) 100%
-  );
+  
+  
   color: var(--main-color);
-  box-shadow:
-    inset 0 0 8px rgba(212, 175, 55, 0.3),
-    0 0 10px 2px rgba(212, 175, 55, 0.1);
+ 
 }
 
 .section-title:hover {
   color: #b8860b;
   border-color: var(--secondary-color);
-  box-shadow:
-    inset 0 0 10px rgba(200, 169, 110, 0.5),
-    0 0 12px 3px rgba(200, 169, 110, 0.2);
+  
+    
 }
 
-/* ===== Filters ===== */
 .filters {
   display: flex;
   gap: 10px;
@@ -136,7 +107,6 @@ body {
   transition: all 0.3s;
 }
 
-.filter-btn.active,
 .filter-btn:hover {
   background-color: var(--main-color);
   border-color: var(--main-color);
@@ -144,7 +114,7 @@ body {
   font-weight: 600;
 }
 
-/* ===== Grid ===== */
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -153,36 +123,26 @@ body {
   margin: 20px;
 }
 
-.card {
 
-  width: 450px;
- 
-}
 
-/* ===== Card ===== */
+
 .card {
   background-color: var(--bg-card);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid #d4af3733;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
   cursor: pointer;
+  width: 450px;
 }
 
 .card:hover {
   transform: translateY(-4px);
   border-color: var(--main-color);
-  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.12);
+  box-shadow: 0 6px 20px #d4af371f;
 }
 
-.card-img-placeholder {
-  width: 100%;
-  height: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-}
+
 
 .card-body {
   padding: 16px;
@@ -192,7 +152,7 @@ body {
   font-size: 10px;
   color: var(--main-color);
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform:uppercase;
   margin-bottom: 6px;
   font-weight: 600;
 }
@@ -218,8 +178,8 @@ body {
   color: var(--main-color);
   text-decoration: none;
   font-weight: 600;
-  transition: letter-spacing 0.2s;
-   letter-spacing: 0.5px;
+
+  
 }
 
 .card-link:hover {
@@ -227,11 +187,21 @@ body {
   text-decoration: underline;
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 768px) {
-  .hero { padding: 60px 20px; }
-  .hero h1 { font-size: 26px; }
-  .flex { padding: 16px 20px 40px; }
-  .card { max-width: 100%; }
-  .filters { padding: 0 20px 10px; }
+     .hero { 
+      padding: 60px 20px; 
+    }
+  .hero h1 { 
+    font-size: 26px; 
+  }
+  .flex { 
+    padding: 16px 20px 40px; 
+  }
+  .card { 
+    max-width: 100%;
+   }
+  .filters { 
+    padding: 0 20px 10px;
+   }
 }
