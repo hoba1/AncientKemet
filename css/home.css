@@ -328,7 +328,7 @@
 
 .blog-image {
   width: 100%;
-  height: 100%;
+  height: 200px;
   border-radius: 6px 6px 0 0;
 
   transition: 0.3s ease;
@@ -485,6 +485,10 @@
   color: var(--text-color);
   line-height: 1.5;
   margin-bottom: 15px;
+}
+
+.event-card .main-btn {
+  text-decoration: none;
 }
 
 
