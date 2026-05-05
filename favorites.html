@@ -26,17 +26,12 @@
           <li>
             <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
           </li>
-          <li class="login-btn">
+          <li>
             <a href="./login.html"><button class="main-btn">Login</button></a>
           </li>
-          <li class="signup-btn">
+          <li>
             <a href="./sign-up.html"
               ><button class="main-btn">Sign Up</button></a
-            >
-          </li>
-          <li class="logout-btn">
-            <a href="./index.html"
-              ><button class="main-btn">Logout</button></a
             >
           </li>
         </ul>
@@ -59,7 +54,7 @@
             <button class="filter-btn" data-filter="artifact">Artifact</button>
             <button class="filter-btn" data-filter="exhibition">Exhibition</button>
         </div>
-        <button class="add-btn" id="openModalBtn"><i class="fa-solid fa-plus"></i> Add New</button>
+        <button class="add-btn" id="openModalBtn">+ Add New</button>
     </div>
 
     <section class="favorites-flex" id="favoritesGrid">
@@ -93,7 +88,7 @@
                 <span class="badge badge-exhibition">EXHIBITION</span>
                 <h3> The Statue of Khafre</h3>
                 <p>A stunning Old Kingdom masterpiece carved from dark stone around 2500 BC, depicting Pharaoh Khafre enthroned with the falcon god Horus embracing his head — one of the most complete royal statues ever found in ancient Egypt..</p>
-                <span class="card-meta"></span>
+               
                 <a href="https://arce.org/khafre-enthroned/">EXPLORE <i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
         </div>
@@ -136,7 +131,7 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
-          <h2 class="footer-logo">Ancient Kemet</h2>
+          <h2 class="footer-logo">Egypt Heritage</h2>
           <p>
             Explore the legacy of ancient Egypt — history, culture, and timeless
             wonders.
@@ -178,14 +173,14 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Ancient Kemet. All rights reserved.</p>
+        <p>© 2026 Egypt Heritage. All rights reserved.</p>
       </div>
     </footer>
-<script src = "./js/main.js"></script> 
+<script src = "./js/main.js"></script> <script src="./js/all.min.js"></script>
 
 
   <script>
-    // حذف كارت
+   
     document.addEventListener('click', function (e) {
         if (e.target.classList.contains('delete-btn')) {
             const card = e.target.closest('.favorite-card');
@@ -196,7 +191,7 @@
         }
     });
 
-    // فلتر
+    
     const filterBtns = document.querySelectorAll('.filter-btn');
     filterBtns.forEach(btn => {
         btn.addEventListener('click', function () {
