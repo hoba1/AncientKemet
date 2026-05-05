@@ -236,7 +236,6 @@ nav .menu-toggle:hover {
 }
 
 .section-title:hover {
-  color: #f5e6b5; /* lighter gold */
   border-color: var(--secondary-color);
 
   box-shadow:

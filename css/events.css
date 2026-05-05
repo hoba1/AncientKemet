@@ -40,26 +40,6 @@ body {
     padding: 50px 20px;
     background-color: var(--bg-card);
 }
-/* ده العنوان اللى قبل الكردات */
-.section-title {
-  width: fit-content;
-  margin: 40px auto 24px;
-  font-size: 19px;
-  padding: 0.6em 1em;
-  letter-spacing: 0.06em;
-  font-family: var(--font-heading);
-  border-radius: 0.6em;
-  overflow: hidden;
-  border: 2px solid var(--main-color);
-  
-}
-
-.section-title:hover {
-  color: #b8860b;
-  border-color: var(--secondary-color);
- 
-}
-
 /* ده لي div الكبير اللى شايل الكروت */
 .events .container {
     display: flex;
