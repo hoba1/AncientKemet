@@ -8,6 +8,15 @@ body {
     line-height: 1.6;
 }
 
+.div-back-btn {
+    padding: 20px 30px 0;
+     color:var(--main-color);
+     
+}
+.div-back-btn a {
+    text-decoration: none;
+     color:var(--main-color);
+}
 
 /* --- القسم العلوي (Hero) --- */
 .hero-section {
@@ -93,7 +102,7 @@ h1 {
 
 .narrative-text { flex: 2; }
 
-h2 {
+.narrative-text h2 {
     font-family: var(--font-heading);
     font-size: 2rem;
     margin-bottom: 20px;
@@ -187,4 +196,92 @@ h2 {
     
     /* تحسين جودة الصورة عند التصغير */
     image-rendering: -webkit-optimize-contrast; 
+}
+/* --- Responsive Design (Max-width: 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    /* 1. ضبط الـ Hero Section لتصبح العناصر تحت بعضها */
+    .hero-section {
+        flex-direction: column;
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+        text-align: center; /* توسيط النصوص للموبايل */
+    }
+
+    .content {
+        margin: 0 20px 20px 20px;
+        padding-right: 0; /* إلغاء المسافة الجانبية */
+    }
+
+    h1 {
+        font-size: 2.2rem; /* تصغير حجم العنوان ليناسب الموبايل */
+    }
+
+    /* 2. ضبط كارت العد التنازلي */
+    .info-card {
+        width: 90%; /* يأخذ عرض الشاشة تقريباً */
+        margin: 0 auto; /* توسيط الكارت */
+        padding: 20px;
+    }
+
+    .countdown {
+        gap: 5px;
+    }
+
+    .time-box {
+        padding: 10px 2px;
+    }
+
+    .time-box span {
+        font-size: 18px;
+    }
+
+    /* 3. ضبط قسم السرد والجدول الزمني */
+    .narrative-section {
+        flex-direction: column; /* العناصر تحت بعضها */
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .narrative-text {
+        width: 100%;
+    }
+
+    .narrative-section p, 
+    .narrative-section h2 {
+        margin-left: 0; /* إلغاء الهوامش الجانبية الكبيرة */
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    /* 4. ضبط الصور */
+    .image-placeholders {
+        justify-content: center; /* توسيط الصور */
+        margin-left: 0;
+        flex-wrap: wrap; /* السماح للصور بالنزول لسطر جديد إذا زادت */
+    }
+
+    .img-box {
+        width: 150px; /* تصغير حجم الصورة قليلاً */
+        height: 150px;
+    }
+
+    /* 5. ضبط الجدول الزمني (Itinerary) */
+    .itinerary-card {
+        border-left: none; /* إلغاء الخط الجانبي أو تركه حسب الرغبة */
+        border-top: 2px solid var(--secondary-color); /* وضع خط علوي بدلاً من الجانبي */
+        padding-left: 0;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .timeline {
+        padding-left: 30px; /* لإعطاء مساحة للنقاط (bullets) */
+    }
+
+    .timeline .event::before {
+        left: -25px; /* ضبط مكان الدائرة بالنسبة للتصميم الجديد */
+    }
 }
