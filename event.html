@@ -15,7 +15,7 @@
     <title>AncientKemet | Event</title>
 </head>
 <body>
-        <header>
+    <header>
      <nav>
       <div class="container">
         <a href="./index.html" class="logo">Ancient Kemet</a>
@@ -34,14 +34,10 @@
             <a href="./login.html"><button class="main-btn">Login</button></a>
           </li>
           <li class="signup-btn">
-            <a href="./sign-up.html"
-              ><button class="main-btn">Sign Up</button></a
-            >
+            <a href="./sign-up.html"><button class="main-btn">Sign Up</button></a>
           </li>
           <li class="logout-btn">
-            <a href="./index.html"
-              ><button class="main-btn">Logout</button></a
-            >
+            <a href="./index.html"><button class="main-btn">Logout</button></a>
           </li>
         </ul>
         <div class="menu-toggle">
@@ -49,31 +45,31 @@
         </div>
       </div>
     </nav>
+    </header>
 
-    
-    
-
-</header>
+    <div class="div-back-btn">
+            <i class="fa-solid fa-arrow-left"></i><a href="events.html"> Back to Events</a>
+    </div>
 
     <section class="hero-section">
         <div class="content">
-            
-            <h1> Tutankhamun’s Treasures:<br><span class="italic-gold">The Complete Collection</span></h1>
-            <p>For the first time since its discovery in 1922, the full funerary suite of King Tutankhamun is united under one roof. This exhibition is the crowning jewel of the Grand Egyptian Museum, offering an unprecedented look at the life, death, and afterlife of the "Boy King." It is not just a display of gold; it is a 100-year-old promise fulfilled, bringing together all 5,398 artifacts in a narrative-driven sequence.</p>
-            
+         
+            <h1 id="event-title"></h1>
+            <p id="event-description"></p>
         </div>
 
         <div class="info-card">
             <h3>THE UNVEILING</h3>
             <div class="countdown">
-                <div class="time-box"><span>14</span><small>DAYS</small></div>
-                <div class="time-box"><span>22</span><small>HRS</small></div>
-                <div class="time-box"><span>45</span><small>MINS</small></div>
-                <div class="time-box"><span>12</span><small>SECS</small></div>
+                <div class="time-box"><span>00</span><small>DAYS</small></div>
+                <div class="time-box"><span>00</span><small>HRS</small></div>
+                <div class="time-box"><span>00</span><small>MINS</small></div>
+                <div class="time-box"><span>00</span><small>SECS</small></div>
             </div>
             <div class="details">
-                <p><i class="fa-regular fa-calendar"></i>  may, 2026 <br> <small>Daily Viewings</small></p>
-                <p><i class="fa-regular fa-map"></i> The Grand Egyptian Museum </p>
+               
+                <p id="event-date"></p>
+                <p id="event-location"></p>
             </div>
         </div>
     </section>
@@ -81,48 +77,31 @@
     <section class="narrative-section">
         <div class="narrative-text">
             <h2>Where the Golden Age of Kings meets the cutting-edge technology of tomorrow</h2>
-            <p>Chronological Narrative: The tour follows the King’s journey from his childhood in the royal palace to his transition into a god in the afterlife.</p>
+            <p>Chronological Narrative: The tour follows the King's journey from his childhood in the royal palace to his transition into a god in the afterlife.</p>
             <p>State-of-the-Art Preservation: Artifacts are housed in German-engineered, ultra-clear glass cases that are seismic-proof and climate-controlled, allowing for an incredibly close look at details like the King's fingerprints on ancient pottery.</p>
-            
+
             <div class="image-placeholders">
-                <div class="img-box"><img src="./images/The Dawn of the Great Museum.webp" /></div>
-                <div class="img-box"><img src="./images/The Dawn of the Great Museum(2).jpg" /></div>
-                
+                <div class="img-box">
+                  
+                    <img id="event-hero-img" src="" alt="Event Image" />
+                </div>
             </div>
         </div>
 
         <div class="itinerary-card">
             <h3>CURATOR'S ITINERARY</h3>
-            <div class="timeline">
-                <div class="event active">
-                    <strong>09:00 AM - The Hall of Chariots</strong>
-                    <p>Exploration of the six royal chariots, witnessing the military engineering of the 18th Dynasty.</p>
-                </div>
-                <div class="event">
-                    <strong>11:00 AM - The Golden Shrines</strong>
-                    <p>A walkthrough of the four massive gilded shrines that once nested together to guard the King.</p>
-                </div>
-                <div class="event">
-                    <strong>01:30 PM - The Inner Sanctum</strong>
-                    <p>Exclusive access to the centerpiece: The 11kg Solid Gold Mask and the innermost gold coffin.</p>
-                </div>
-                <div class="event">
-                    <strong>03:30 PM - The King's Wardrobe</strong>
-                    <p>A close-up look at the King's personal jewelry, sandals, and the world’s oldest linen garments.</p>
-                </div>
+            <div class="timeline" id="event-timeline">
+               
             </div>
         </div>
     </section>
-     <footer class="footer">
+
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
           <h2 class="footer-logo">Ancient Kemet</h2>
-          <p>
-            Explore the legacy of ancient Egypt — history, culture, and timeless
-            wonders.
-          </p>
+          <p>Explore the legacy of ancient Egypt — history, culture, and timeless wonders.</p>
         </div>
-
         <div class="footer-col">
           <h3>Navigation</h3>
           <ul>
@@ -133,7 +112,6 @@
             <li><a href="./contact-us.html">Contact Us</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h3>Explore</h3>
           <ul>
@@ -145,7 +123,6 @@
             <li><a href="./locations.html">Locations</a></li>
           </ul>
         </div>
-
         <div class="footer-col">
           <h3>More</h3>
           <ul>
@@ -156,12 +133,13 @@
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
         <p>© 2026 Ancient Kemet. All rights reserved.</p>
       </div>
     </footer>
-   <script src="./js/main.js"></script>
-    <script src="./js/event.js"> </script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/events.js"></script>
+    <script src="./js/event.js"></script>
 </body>
 </html>
