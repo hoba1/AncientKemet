@@ -1,20 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>AncientKemet | Ancient History</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/ancient-history.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <title>AncientKemet | Ancient History</title>
 </head>
 <body>
-    Ancient History Page
-    <script src="./js/all.min.js"></script>
+
+<!-- ── NAVBAR ── -->
+    <nav>
+      <div class="container">
+        <a href="./index.html" class="logo">Ancient Kemet</a>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./pyramids.html">Pyramids</a></li>
+          <li><a href="./tourguides.html">Tour Guide</a></li>
+          <li>
+            <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+          </li>
+          <li>
+            <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
+          </li>
+          <li class="login-btn">
+            <a href="./login.html"><button class="main-btn">Login</button></a>
+          </li>
+          <li class="signup-btn">
+            <a href="./sign-up.html"
+              ><button class="main-btn">Sign Up</button></a
+            >
+          </li>
+          <li class="logout-btn">
+            <a href="./index.html"
+              ><button class="main-btn">Logout</button></a
+            >
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+<!-- ── INTRO ── -->
+
+
+<!-- ── PILLARS ── -->
+<section class="pillars-section">
+  <h2 class="section-title">Pillars of Civilization</h2>
+
+  <div class="pillars-grid">
+
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="fa-solid fa-landmark"></i></div>
+      <h3>Architecture</h3>
+      <p>Massive pyramids and temples designed to outlast eternity. The Great Pyramid stood as the tallest man-made structure for over 3,800 years.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="fa-solid fa-scroll"></i></div>
+      <h3>Writing & Knowledge</h3>
+      <p>Hieroglyphics recorded history, medicine, and religion. The Rosetta Stone later unlocked this ancient language for modern scholars.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="fa-solid fa-ankh"></i></div>
+      <h3>Religion & Afterlife</h3>
+      <p>Belief in the afterlife shaped Egyptian culture deeply. Mummification and the Book of the Dead guided souls toward eternal life.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="fa-solid fa-flask"></i></div>
+      <h3>Science & Medicine</h3>
+      <p>Egyptians pioneered surgery, dentistry, and astronomy. The Edwin Smith Papyrus is the oldest known surgical document in history.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="fa-solid fa-water"></i></div>
+      <h3>The Nile</h3>
+      <p>The Nile was the lifeline of Egypt — providing fertile soil, trade routes, and fresh water in the heart of the Sahara desert.</p>
+    </div>
+
+    <div class="pillar-card">
+      <div class="pillar-icon"><i class="fa-solid fa-coins"></i></div>
+      <h3>Trade & Economy</h3>
+      <p>Egypt traded gold, papyrus, linen, and grain across the ancient world, establishing ties with Nubia, Punt, and the Levant.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── QUOTE ── -->
+<section class="quote-banner">
+  <blockquote>
+    "Egypt is the gift of the Nile."
+    <cite>— Herodotus, Greek Historian, 450 BCE</cite>
+  </blockquote>
+</section>
+
+<!-- ── TIMELINE ── -->
+<!-- id="timeline" is the anchor target for the "Learn More" button above -->
+<section class="timeline-section" id="timeline">
+  <h2 class="section-title">Timeline of Egypt</h2>
+
+  <div class="timeline">
+
+    <!-- each .timeline-item has: date on the left | dot+line in center | card on the right -->
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">3100 BCE</span>
+      </div>
+      <div class="timeline-center">
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-card">
+        <h3>Unification of Egypt</h3>
+        <p>King Narmer unites Upper and Lower Egypt, establishing the first dynasty and the foundation of Pharaonic rule.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">2630 BCE</span>
+      </div>
+      <div class="timeline-center">
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-card">
+        <h3>Step Pyramid of Djoser</h3>
+        <p>Architect Imhotep designs the first pyramid — a revolutionary leap from flat mastabas to towering stone monuments.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">2560 BCE</span>
+      </div>
+      <div class="timeline-center">
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-card">
+        <h3>Great Pyramid of Giza</h3>
+        <p>Pharaoh Khufu commissions the Great Pyramid — one of the Seven Wonders, aligned with astonishing astronomical precision.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">1353 BCE</span>
+      </div>
+      <div class="timeline-center">
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-card">
+        <h3>The Amarna Period</h3>
+        <p>Akhenaten introduces radical monotheism centered on Aten the sun disk, transforming art, religion, and politics.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">1279 BCE</span>
+      </div>
+      <div class="timeline-center">
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-card">
+        <h3>Reign of Ramesses II</h3>
+        <p>The greatest pharaoh rules for 66 years — building Abu Simbel and signing history's first known peace treaty.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">332 BCE</span>
+      </div>
+      <div class="timeline-center">
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-card">
+        <h3>Alexander the Great</h3>
+        <p>Alexander conquers Egypt and founds Alexandria, which becomes the intellectual capital of the ancient world.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-left">
+        <span class="timeline-date">30 BCE</span>
+      </div>
+      <div class="timeline-center">
+        <!-- .last stops the vertical line from continuing below the final dot -->
+        <div class="timeline-dot last"></div>
+      </div>
+      <div class="timeline-card">
+        <h3>End of Ancient Egypt</h3>
+        <p>Cleopatra VII dies and Egypt becomes a Roman province, closing three thousand years of Pharaonic civilization.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── ARTICLES ── -->
+<section class="articles-section">
+  <h2 class="section-title">Featured Articles</h2>
+
+  <div class="articles-grid">
+
+    <div class="article-card">
+      <div class="card-image">
+        <img src="./images/pyramid-y.jpg" alt="Pyramids">
+      </div>
+      <div class="card-body">
+        <h3>Architects of the Pyramids</h3>
+        <p>The engineering genius and sociopolitical machine behind the pyramids of Giza.</p>
+        <a href="https://en.wikipedia.org/wiki/Construction_of_the_Egyptian_pyramids" class="read-link" target="_blank">Read Article</a>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="card-image">
+        <img src="./images/lang.jpg" alt="Hieroglyphs">
+      </div>
+      <div class="card-body">
+        <h3>The Language of their Gods</h3>
+        <p>How hieroglyphics preserved three thousand years of history, science, and myth.</p>
+        <a href="https://en.wikipedia.org/wiki/Egyptian_hieroglyphs" class="read-link" target="_blank">Read Article</a>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="card-image">
+        <img src="./images/ramsis-y.jpg" alt="Ramesses II">
+      </div>
+      <div class="card-body">
+        <h3>Royal Legacy of the Pharaohs</h3>
+        <p>Powerful rulers whose ambitions shaped the ancient world and echo through history.</p>
+        <a href="https://en.wikipedia.org/wiki/List_of_pharaohs" class="read-link" target="_blank">Read Article</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h2 class="footer-logo">Ancient Kemet</h2>
+          <p>
+            Explore the legacy of ancient Egypt — history, culture, and timeless
+            wonders.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./sign-up.html">Sign Up</a></li>
+            <li><a href="./favorites.html">Favorites</a></li>
+            <li><a href="./contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="./ancient-history.html">Ancient History</a></li>
+            <li><a href="./civilizations.html">Civilizations</a></li>
+            <li><a href="./pyramids.html">Pyramids</a></li>
+            <li><a href="./temples.html">Temples</a></li>
+            <li><a href="./museums.html">Museums</a></li>
+            <li><a href="./locations.html">Locations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>More</h3>
+          <ul>
+            <li><a href="./tourguides.html">Tour Guides</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ancient Kemet. All rights reserved.</p>
+      </div>
+    </footer>
+
+<script src="./js/all.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
