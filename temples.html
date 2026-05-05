@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link 
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/temples.css">
+    <link rel="stylesheet" href="./css/temples.css" />
     <title>AncientKemet | Temples</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
       <div class="container">
         <a href="./index.html" class="logo">Ancient Kemet</a>
@@ -29,13 +29,16 @@
           <li>
             <a class="theme-btn"><i class="fa-regular fa-moon"></i></a>
           </li>
-          <li>
+          <li class="login-btn">
             <a href="./login.html"><button class="main-btn">Login</button></a>
           </li>
-          <li>
+          <li class="signup-btn">
             <a href="./sign-up.html"
               ><button class="main-btn">Sign Up</button></a
             >
+          </li>
+          <li class="logout-btn">
+            <a href="./index.html"><button class="main-btn">Logout</button></a>
           </li>
         </ul>
         <div class="menu-toggle">
@@ -43,92 +46,132 @@
         </div>
       </div>
     </nav>
-  
-  <section class="hero">
-    <div class="badge">Featured Discovery</div>
-    <h1>Temples of the Nile — Built for the gods,  <span>remembered by time</span></h1>
-    <p>For thousands of years, the temples of ancient Egypt have stood in silence</p>
-   
-  </section>
 
- 
-  <div class="section-title">The Temples</div>
+    <section class="hero">
+      <div class="badge">Featured Discovery</div>
+      <h1>
+        Temples of the Nile — Built for the gods,
+        <span>remembered by time</span>
+      </h1>
+      <p>
+        For thousands of years, the temples of ancient Egypt have stood in
+        silence
+      </p>
+    </section>
 
+    <div class="section-title">The Temples</div>
 
-  <div class="filters">
-    <button class="filter-btn active" data-filter="all">All Regions</button>
-    <button class="filter-btn" data-filter="upper">Upper Egypt</button>
-    <button class="filter-btn" data-filter="lower">Lower Egypt</button>
-    <button class="filter-btn" data-filter="nubia">Nubia</button>
-  </div>
-
-  <div class="flex" >
-
-    <div class="card" data-region="upper">
-     <img src="./images/karnakt.jpeg" alt="Karnak Temple Complex">
-      <div class="card-body">
-        <div class="card-region">Upper Egypt · Luxor</div>
-        <div class="card-title">Karnak Temple Complex</div>
-        <p class="card-desc">The largest religious building ever constructed, developed over 2,000 years through successive pharaohs.</p>
-        <a href="https://en.wikipedia.org/wiki/Karnak" class="card-link">Examine Records <i class="fa-solid fa-up-right-from-square"></i></a>
-      </div>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All Regions</button>
+      <button class="filter-btn" data-filter="upper">Upper Egypt</button>
+      <button class="filter-btn" data-filter="lower">Lower Egypt</button>
+      <button class="filter-btn" data-filter="nubia">Nubia</button>
     </div>
 
-    <div class="card" data-region="upper">
-      <img src="./images/Egypt-Luxor-Temple1-S.jpg" alt="Luxor Temple">
-      <div class="card-body">
-        <div class="card-region">Upper Egypt</div>
-        <div class="card-title">Luxor Temple</div>
-        <p class="card-desc">Dedicated to the rejuvenation of kingship, located in the heart of ancient Thebes.</p>
-        <a href="https://en.wikipedia.org/wiki/Luxor_Temple" class="card-link">Examine Records <i class="fa-solid fa-up-right-from-square"></i></a>
+    <div class="flex">
+      <div class="card" data-region="upper">
+        <img src="./images/karnakt.jpeg" alt="Karnak Temple Complex" />
+        <div class="card-body">
+          <div class="card-region">Upper Egypt · Luxor</div>
+          <div class="card-title">Karnak Temple Complex</div>
+          <p class="card-desc">
+            The largest religious building ever constructed, developed over
+            2,000 years through successive pharaohs.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Karnak" class="card-link"
+            >Examine Records <i class="fa-solid fa-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="card" data-region="upper">
+        <img src="./images/Egypt-Luxor-Temple1-S.jpg" alt="Luxor Temple" />
+        <div class="card-body">
+          <div class="card-region">Upper Egypt</div>
+          <div class="card-title">Luxor Temple</div>
+          <p class="card-desc">
+            Dedicated to the rejuvenation of kingship, located in the heart of
+            ancient Thebes.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Luxor_Temple" class="card-link"
+            >Examine Records <i class="fa-solid fa-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="card" data-region="upper">
+        <img
+          src="./images/Hatshepsut-Temple1.jpg"
+          alt="Mortuary Temple of Hatshepsut"
+        />
+
+        <div class="card-body">
+          <div class="card-region">Upper Egypt</div>
+          <div class="card-title">Mortuary Temple of Hatshepsut</div>
+          <p class="card-desc">
+            A masterpiece of ancient architecture, its terraces blending
+            seamlessly with the limestone cliffs of Deir el-Bahari.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Mortuary_temple_of_Hatshepsut"
+            class="card-link"
+            >Examine Records <i class="fa-solid fa-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="card" data-region="nubia">
+        <img src="./images/images6.jpeg" alt="Temple of Philae" />
+
+        <div class="card-body">
+          <div class="card-region">Nubia</div>
+          <div class="card-title">Temple of Philae</div>
+          <p class="card-desc">
+            The island jewel of the Nile, dedicated to the goddess Isis and
+            famously relocated to save it from the Aswan Dam waters.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Philae_temple_complex"
+            class="card-link"
+            >Examine Records <i class="fa-solid fa-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="card" data-region="lower">
+        <img src="./images/AbydosFacade.jpg" alt="Temple of Seti I at Abydos" />
+        <div class="card-body">
+          <div class="card-region">Lower Egypt</div>
+          <div class="card-title">Temple of Seti I at Abydos</div>
+          <p class="card-desc">
+            One of the finest Egyptian temples, housing the famous King's List
+            that documented the names of the pharaohs.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Temple_of_Seti_I_(Abydos)"
+            class="card-link"
+            >Examine Records <i class="fa-solid fa-up-right-from-square"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="card" data-region="nubia">
+        <img src="./images/simple.2.jpeg" alt="Abu Simbel" />
+
+        <div class="card-body">
+          <div class="card-region">Nubia</div>
+          <div class="card-title">Abu Simbel</div>
+          <p class="card-desc">
+            Twice a year, sunlight aligns to illuminate the face of Ramesses II
+            with remarkable astronomical precision.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Abu_Simbel" class="card-link"
+            >Examine Records <i class="fa-solid fa-up-right-from-square"></i
+          ></a>
+        </div>
       </div>
     </div>
-
-    <div class="card" data-region="upper">
-      <img src="./images/Hatshepsut-Temple1.jpg" alt="Mortuary Temple of Hatshepsut">
-      
-      <div class="card-body">
-        <div class="card-region">Upper Egypt</div>
-        <div class="card-title">Mortuary Temple of Hatshepsut</div>
-        <p class="card-desc">A masterpiece of ancient architecture, its terraces blending seamlessly with the limestone cliffs of Deir el-Bahari.</p>
-        <a href="https://en.wikipedia.org/wiki/Mortuary_temple_of_Hatshepsut" class="card-link">Examine Records <i class="fa-solid fa-up-right-from-square"></i></a>
-      </div>
-    </div>
-
-    <div class="card" data-region="nubia">
-      <img src="./images/images6.jpeg" alt="Temple of Philae">
-      
-      <div class="card-body">
-        <div class="card-region">Nubia</div>
-        <div class="card-title">Temple of Philae</div>
-        <p class="card-desc">The island jewel of the Nile, dedicated to the goddess Isis and famously relocated to save it from the Aswan Dam waters.</p>
-        <a href="https://en.wikipedia.org/wiki/Philae_temple_complex" class="card-link">Examine Records <i class="fa-solid fa-up-right-from-square"></i></a>
-      </div>
-    </div>
-
-    <div class="card" data-region="lower">
-      <img src="./images/AbydosFacade.jpg" alt="Temple of Seti I at Abydos">
-      <div class="card-body">
-        <div class="card-region">Lower Egypt</div>
-        <div class="card-title">Temple of Seti I at Abydos</div>
-        <p class="card-desc">One of the finest Egyptian temples, housing the famous King's List that documented the names of the pharaohs.</p>
-        <a href="https://en.wikipedia.org/wiki/Temple_of_Seti_I_(Abydos)" class="card-link">Examine Records <i class="fa-solid fa-up-right-from-square"></i></a>
-      </div>
-    </div>
-
-    <div class="card" data-region="nubia">
-      <img src="./images/simple.2.jpeg" alt="Abu Simbel">
-  
-      <div class="card-body">
-        <div class="card-region">Nubia</div>
-        <div class="card-title">Abu Simbel</div>
-        <p class="card-desc">Twice a year, sunlight aligns to illuminate the face of Ramesses II with remarkable astronomical precision.</p>
-        <a href="https://en.wikipedia.org/wiki/Abu_Simbel" class="card-link">Examine Records <i class="fa-solid fa-up-right-from-square"></i></a>
-      </div>
-    </div>
-
-  </div>
-  <footer class="footer">
+    <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
           <h2 class="footer-logo">Egypt Heritage</h2>
@@ -177,22 +220,22 @@
       </div>
     </footer>
 
-  
-  <script>
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', function () {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-        const filter = this.dataset.filter;
-        document.querySelectorAll('.card').forEach(card => {
-          card.style.display = (filter === 'all' || card.dataset.region === filter) ? 'block' : 'none';
+    <script>
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          this.classList.add("active");
+          const filter = this.dataset.filter;
+          document.querySelectorAll(".card").forEach((card) => {
+            card.style.display =
+              filter === "all" || card.dataset.region === filter
+                ? "block"
+                : "none";
+          });
         });
       });
-    });
-  </script>
-
-</body>
-    <script src = "./js/main.js"></script> 
-
+    </script>
+  </body>
+  <script src="./js/main.js"></script>
 </html>
