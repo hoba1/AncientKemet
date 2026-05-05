@@ -1,4 +1,4 @@
-/* --- تصفير المسافات --- */
+/* تصفير المسافات */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-/* -- ده السكشن اللى فيه الجزء بتاع head  --- */
+/*  ده السكشن اللى فيه الجزء بتاع head  */
 .hero {
     font-family: var(--font-heading);
     height: 80vh;
@@ -18,7 +18,7 @@ body {
     background-size: cover;
 }
 
-/* --- دي الكلمه الصغيره اللى فوق --- */
+/* دي الكلمه الصغيره اللى فوق */
 .badge {
     color: var(--main-color);
     background: #b8870b2f;
@@ -28,14 +28,14 @@ body {
     font-weight: bold;
 }
 
-/* --- The Great Pyramids --- */
+/* The Great Pyramids */
 h1 {
     font-size: 70px;
     color: var(--main-color);
     margin: 15px 0;
 }
 
-/* --- دي الكلام اللى قبل cards يتاعت كل هرم --- */
+/* دي الكلام اللى قبل cards يتاعت كل هرم */
 .p {
     font-size: 30px;
     color:var(--secondary-color) ;
@@ -43,7 +43,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* --- ده ال section اللى في كل الكروت --- */
+/* ده ال section اللى في كل الكروت */
 .pyramids-flex  {
     display:flex;
     justify-content: center;
@@ -51,7 +51,7 @@ h1 {
     padding: 60px 8%;
 }
 
-/* --- ده لي كل كارت لوحده --- */
+/* ده لي كل كارت لوحده */
 .card {
     background: var( --bg-card);
     border: 1px solid var(--bg-card);
@@ -68,7 +68,7 @@ h1 {
     transform: translateY(-5px);
 }
 
-/* --- ده لي الصوره اللى في الكرت --- */
+/* ده لي الصوره اللى في الكرت */
 .card-img img  {
     width: 100%;
     height: 250px;
@@ -76,26 +76,26 @@ h1 {
 }
 
 
-/* --- دي جواها المحتوه اللى تحت الصوره كله--- */
+/* دي جواها المحتوه اللى تحت الصوره كل */
 .card-content { 
     padding: 20px;
     color: var(  --text-color);
  }
 
- /* --- دي لي اسم الملك صاحب الهرم--- */
+ /* دي لي اسم الملك صاحب الهر */
 .card h3 { 
      font-family: var(--font-heading);
      color: #b8860b;
      margin-bottom: 10px; 
     }
 
-    /* --- دي لي معلومات عن الهرم --- */
+    /* دي لي معلومات عن الهرم */
 .card p {
      font-size: 16px;
       margin-bottom: 20px; 
     }
 
-/* -- ده div جواه معلومات رقميه عن الهرم--- */
+/* ده div جواه معلومات رقميه عن الهر */
 .card-stats {
     display: flex;
     justify-content: space-between;
@@ -113,12 +113,11 @@ h1 {
     font-size: 12px;
      color: #999;
      }
-/* --- ده علشان تنعمل لينك --- */
+/* ده علشان تنعمل لينك */
 .read{
     text-align: center;
 }
 
-/* --- زرار الـ Read More --- */
 .read button{
     padding: 10px;
     border: none;
@@ -131,7 +130,7 @@ h1 {
      font-size: 15px;
 } 
 
-/* --- دوت علشان الجدول--- */
+/* دوت علشان الجدو */
 .info-table {
    width: 90%;
    margin: 30px auto 60px; /* ظبطت المارجن عشان السنترة */
@@ -154,14 +153,14 @@ h1 {
     transition: 0.3s;
 }
 
-/* --- دوت علشان الخريطه--- */
+/* دوت علشان الخريط */
 .maps {
     margin-top: 30px;
     width: 100%;
     margin-bottom:50px ;
 }
 
-/* --- الميديا --- */
+/* الميديا */
   @media (max-width: 768px) {
     body{
         overflow-x: hidden;

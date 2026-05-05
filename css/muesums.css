@@ -39,12 +39,11 @@ body {
 }
 
 
-/* --- ده علشان تنعمل لينك --- */
+/* ده علشان تنعمل لينك */
 .read{
     text-align: left;
 }
 
-/* --- زرار الـ Read More --- */
 .read button{
     padding: 10px;
     border: none;
@@ -112,12 +111,11 @@ body {
 
 
 
-/* --- ده علشان تنعمل لينك --- */
+/* ده علشان تنعمل لينك */
 .read{
     text-align: left;
 }
 
-/* --- زرار الـ Read More --- */
 .read button{
     padding: 10px;
     border: none;
@@ -129,8 +127,6 @@ body {
      color: black;
      font-size: 15px;
 } 
-
-
 
 /* ده بقا سشكن الكاردز */
 .title{

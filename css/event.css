@@ -1,4 +1,4 @@
-/* --- تصفير الإعدادات الافتراضية للمتصفح --- */
+/* تصفير الإعدادات الافتراضية للمتصفح  */
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
 }
-/* --- زر الرجوع للخلف --- */
+/*  زرار الرجوع للخلف  */
 .div-back-btn {
     padding: 20px 30px 0;
      color:var(--main-color);
@@ -18,7 +18,7 @@ body {
      color:var(--main-color);
 }
 
-/* --- القسم العلوي (Hero) --- */
+/* (Hero)  */
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ body {
     border-bottom: 1px solid rgba(0,0,0,0.05);/* خط بسيط بيفصل السكشن */
     background-color: var(--background-color);
 }
-/* --- المحتوى النصي في قسم الـ Hero --- */
+/* المحتوى النصي في قسم ال Hero  */
 .content {
   margin: 0 15px 30px 30px;
 }
@@ -48,7 +48,7 @@ h1 {
     font-style: italic;
 }
 
-/* --- كارت العد التنازلي --- */
+/* كارت العد التنازلي  */
 .info-card {
     background-color: var(--bg-card);
     padding: 30px;
@@ -67,13 +67,13 @@ h1 {
     margin-bottom: 20px;
     color: var(--secondary-color);
 }
-/* --- حاوية مربعات الوقت --- */
+/* مربعات الوقت */
 .countdown {
     display: flex;
     gap: 10px;
     margin-bottom: 25px;
 }
-/* --- تصميم مربع الوقت الواحد (يوم/ساعة/دقيقة) --- */
+/* تصميم مربع الوقت الواحد (يوم/ساعة/دقيقة)  */
 .time-box {
     background-color: var(--background-color); 
     color: var(--text-color);
@@ -91,7 +91,7 @@ h1 {
     font-weight: bold;
 }
 
-/* --- قسم السرد والجدول الزمني --- */
+/* قسم الوصف والجدول الزمني */
 .narrative-section {
     display: flex;
     gap: 60px;
@@ -100,7 +100,7 @@ h1 {
 .narrative-section p ,h2{ 
   margin-left: 30px;
 }
-/* نص القصة ياخد مساحة أكبر */
+/* النص  ياخد مساحة أكبر */
 .narrative-text { flex: 2; }
 
 .narrative-text h2 {
@@ -108,14 +108,14 @@ h1 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-/* --- حاوية الصور التوضيحية --- */
+/*  الصور التوضيحية  */
 .image-placeholders {
     display: flex;
     gap: 20px;
     margin-top: 30px;
     margin-left: 40px;
 }
-/* --- تنسيق مربعات الصور --- */
+/* تنسيق مربعات الصور  */
 .img-box {
     width: 200px;
     height: 200px;
@@ -123,7 +123,7 @@ h1 {
     border: 1px solid rgba(0,0,0,0.1);
 }
 
-/* --- كارت الجدول الزمني --- */
+/* كارت الجدول الزمني */
 .itinerary-card {
     flex: 1;
     border-left: 2px solid var(--secondary-color);
@@ -136,12 +136,12 @@ h1 {
     margin-bottom: 30px;
     color: var(--secondary-color);
 }
-/* --- تنسيق أحداث الجدول الزمني --- */
+/* تنسيق أحداث الجدول الزمني */
 .timeline .event {
     position: relative;
     margin-bottom: 35px;
 }
-/* --- رسم النقطة (الدائرة) بجانب كل حدث --- */
+/* رسم الدائر بجانب كل حدث */
 .timeline .event::before {
     content: '';
     position: absolute;
@@ -152,7 +152,7 @@ h1 {
     background-color: #e0e0e0;
     border-radius: 50%;
 }
-/* --- تمييز الحدث النشط (Active) --- */
+/* تمييز الحدث النشط */
 .timeline .event.active::before {
     background-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
@@ -168,7 +168,7 @@ h1 {
 .event.active strong {
     color: var(--main-color);
 }
-/* تنسيق الحاوية الخارجية للصورة */
+
 .img-box {
     width: 200px;          
     height: 200px;         
@@ -190,10 +190,9 @@ h1 {
     object-position: center; 
     image-rendering: -webkit-optimize-contrast; 
 }
-/* --- Responsive Design (Max-width: 768px) --- */
 @media screen and (max-width: 768px) {
     
-    /* 1. ضبط الـ Hero Section لتصبح العناصر تحت بعضها */
+    /* ضبط ال Hero Section لتصبح العناصر تحت بعضها */
     .hero-section {
         flex-direction: column;
         padding-bottom: 40px;
@@ -210,7 +209,7 @@ h1 {
         font-size: 2.2rem; /* تصغير حجم العنوان ليناسب الموبايل */
     }
 
-    /* 2. ضبط كارت العد التنازلي */
+    /* ضبط كارت العد التنازلي */
     .info-card {
         width: 90%; 
         margin: 0 auto; 
@@ -229,7 +228,7 @@ h1 {
         font-size: 18px;
     }
 
-    /* 3. ضبط قسم السرد والجدول الزمني */
+    /* ضبط قسم الوصف والجدول الزمني */
     .narrative-section {
         flex-direction: column; /* العناصر تحت بعضها */
         gap: 40px;
@@ -249,7 +248,7 @@ h1 {
         font-size: 1.6rem;
     }
 
-    /* 4. ضبط الصور */
+    /* ضبط الصور */
     .image-placeholders {
         justify-content: center; /* توسيط الصور */
         margin-left: 0;

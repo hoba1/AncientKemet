@@ -13,7 +13,7 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* 3. السكرول بار الذهبي */
+/* السكرول بار الذهبي */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -26,7 +26,7 @@ body {
     background-color: var(--main-color);
     border-radius: 10px;
 }
-/* 5. قسم العناوين */
+/* قسم العناوين */
 .locations-section {
     padding: 80px 20px 40px;
     text-align: center;
@@ -57,7 +57,6 @@ body {
     line-height: 1.7;
 }
 
-/* 6. حاوية الكروت بتأثير Radial Gradient */
 .card-container {
     display: flex;
     justify-content: center;
@@ -170,7 +169,7 @@ body {
     margin-right: 8px;
 }
 
-/* 8. الزر الذهبي المتفاعل */
+/* الزر الذهبي المتفاعل */
 .card-content .btn {
     margin-top: auto;
     align-self: flex-start;
@@ -193,7 +192,6 @@ body {
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
-/* 9. التجاوب مع الموبايل */
 @media (max-width: 768px) {
     .content h1 {
         font-size: 2.5rem;

@@ -1,4 +1,4 @@
-/* ── Layout ── */
+/* Layout */
 body {
     font-family: var(--font-body);
     color: var(--text-color);
@@ -9,7 +9,7 @@ body {
     align-items: center;
 }
 
-/* ── Card ── */
+/* Card */
 .card {
     background-color: var(--bg-card);
     border-radius: 16px;
@@ -19,7 +19,7 @@ body {
     max-width: 420px;
 }
 
-/* ── Title ── */
+/* Title */
 .title {
     text-align: center;
     margin-bottom: 32px;
@@ -39,7 +39,7 @@ body {
     text-transform: uppercase;
 }
 
-/* ── Fields ── */
+/* Fields */
 .field {
     margin-bottom: 18px;
 }
@@ -78,7 +78,7 @@ body {
     opacity: 0.5;
 }
 
-/* ── Extras row ── */
+/* Extras row */
 .extras {
     display: flex;
     align-items: center;
@@ -118,7 +118,7 @@ body {
 }
 .forgot-password:hover { text-decoration: underline; }
 
-/* ── Sign in button ── */
+/* Sign in button */
 .signin-btn {
     width: 100%;
     padding: 14px;
@@ -142,14 +142,14 @@ body {
 .signin-btn:hover  { background-color: rgb(185, 146, 17); }
 .signin-btn:active { transform: scale(0.98); }
 
-/* ── Separator ── */
+/* Separator */
 .separator {
     height: 1px;
     background-color: #D4AF3733;
     margin: 24px 0 16px;
 }
 
-/* ── Bottom text ── */
+/* Bottom text */
 .bottom-text {
     text-align: center;
     font-size: 13px;
@@ -161,7 +161,7 @@ body {
     text-decoration: underline;
 }
 
-/* ── Tagline below card ── */
+/* Tagline below card */
 .tagline {
     margin-top: 18px;
     font-family: var(--font-heading);
