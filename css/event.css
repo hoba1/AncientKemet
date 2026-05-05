@@ -169,15 +169,13 @@ h1 {
 }
 /* تنسيق الحاوية الخارجية للصورة */
 .img-box {
-    width: 200px;           /* نفس العرض المحدد مسبقاً للحفاظ على الهيكل */
-    height: 200px;          /* نفس الارتفاع */
-    background-color: var(--bg-card); /* خلفية بيضاء من متغيراتك */
-    border: 1px solid rgba(0,0,0,0.05); /* إطار خفيف جداً */
-    border-radius: 8px;     /* حواف ناعمة تتناسب مع كروت العداد */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.03); /* ظل ناعم لإبراز الصورة */
-    overflow: hidden;       /* لإخفاء أي جزء من الصورة يخرج عن الحواف المستديرة */
-    
-    /* لضمان توسيط الصورة إذا لم تكن تغطي الصندوق بالكامل */
+    width: 200px;          
+    height: 200px;         
+    background-color: var(--bg-card); 
+    border: 1px solid rgba(0,0,0,0.05); 
+    border-radius: 8px;     
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03); 
+    overflow: hidden;       
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,16 +183,10 @@ h1 {
 
 /* تنسيق الصورة نفسها */
 .img-box img {
-    width: 100%;            /* تغطية كامل عرض الحاوية */
-    height: 100%;           /* تغطية كامل ارتفاع الحاوية */
-    
-    /* أهم خاصية: تجعل الصورة تملأ المربع بدون تمطيطها، مع قص الزوائد */
+    width: 100%;            
+    height: 100%;           
     object-fit: cover;      
-    
-    /* اختيار مكان التوسيط (في هذه الحالة المنتصف) */
     object-position: center; 
-    
-    /* تحسين جودة الصورة عند التصغير */
     image-rendering: -webkit-optimize-contrast; 
 }
 /* --- Responsive Design (Max-width: 768px) --- */
@@ -219,8 +211,8 @@ h1 {
 
     /* 2. ضبط كارت العد التنازلي */
     .info-card {
-        width: 90%; /* يأخذ عرض الشاشة تقريباً */
-        margin: 0 auto; /* توسيط الكارت */
+        width: 90%; 
+        margin: 0 auto; 
         padding: 20px;
     }
 
@@ -270,7 +262,7 @@ h1 {
 
     /* 5. ضبط الجدول الزمني (Itinerary) */
     .itinerary-card {
-        border-left: none; /* إلغاء الخط الجانبي أو تركه حسب الرغبة */
+        border-left: none; 
         border-top: 2px solid var(--secondary-color); /* وضع خط علوي بدلاً من الجانبي */
         padding-left: 0;
         padding-top: 20px;
@@ -278,10 +270,10 @@ h1 {
     }
 
     .timeline {
-        padding-left: 30px; /* لإعطاء مساحة للنقاط (bullets) */
+        padding-left: 30px;
     }
 
     .timeline .event::before {
-        left: -25px; /* ضبط مكان الدائرة بالنسبة للتصميم الجديد */
+        left: -25px;
     }
 }
