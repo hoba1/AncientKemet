@@ -119,7 +119,7 @@ if (document.getElementById("title")) {
 }
 
 // Filter
-let currentFilter = "all";
+let currentFilter ;
 
 function setFilter(category, btn) {
   currentFilter = category;
@@ -133,14 +133,13 @@ function setFilter(category, btn) {
 }
 
 function filterBlogs() {
-  let search = document.getElementById("search").value.toLowerCase();
   let cards = document.querySelectorAll(".card");
 
   cards.forEach(card => {
-    let text = card.innerText.toLowerCase();
+  
     let category = card.getAttribute("data-category");
 
-    let show = (currentFilter === "all" || category === currentFilter) && text.includes(search);
+    let show = (currentFilter === "all" || category === currentFilter) ;
 
     card.style.display = show ? "block" : "none";
   });
