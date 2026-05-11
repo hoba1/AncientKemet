@@ -18,7 +18,7 @@ if (menuToggle) {
 
 let themeBtn = document.querySelector(".theme-btn");
 let themeIcon = document.querySelector(".theme-btn i");
-themeBtn.addEventListener("click", () => {
+themeBtn?.addEventListener("click", () => {
   if (themeIcon.classList.contains("fa-moon")) {
     darkmode();
     localStorage.setItem("mode", "dark");
@@ -28,8 +28,8 @@ themeBtn.addEventListener("click", () => {
   }
 });
 function addandremoveclass(e, ca, cr) {
-  e.classList.remove(cr);
-  e.classList.add(ca);
+  e?.classList.remove(cr);
+  e?.classList.add(ca);
 }
 function darkmode() {
   document.documentElement.style.setProperty("--background-color", "#0F0C06");
