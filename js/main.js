@@ -7,14 +7,6 @@ if (menuToggle) {
     navLinks.classList.toggle("active");
   });
 
-  // المنيو تقفل لما ادوس علي اي لينك
-  const navItems = navLinks.querySelectorAll("a");
-  navItems.forEach((item) => {
-    item.addEventListener("click", function () {
-      navLinks.classList.remove("active");
-    });
-  });
-
   // لما ادوس في  اي حته المنيو تقفل
   document.addEventListener("click", function (e) {
     // !e.target.closest("nav") دي بتتأكد اني مش بدوس علي اي عنصر داخل ال nav
@@ -26,7 +18,7 @@ if (menuToggle) {
 
 let themeBtn = document.querySelector(".theme-btn");
 let themeIcon = document.querySelector(".theme-btn i");
-themeBtn?.addEventListener("click", () => {
+themeBtn.addEventListener("click", () => {
   if (themeIcon.classList.contains("fa-moon")) {
     darkmode();
     localStorage.setItem("mode", "dark");
@@ -36,8 +28,8 @@ themeBtn?.addEventListener("click", () => {
   }
 });
 function addandremoveclass(e, ca, cr) {
-  e?.classList.remove(cr);
-  e?.classList.add(ca);
+  e.classList.remove(cr);
+  e.classList.add(ca);
 }
 function darkmode() {
   document.documentElement.style.setProperty("--background-color", "#0F0C06");
