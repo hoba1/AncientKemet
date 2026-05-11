@@ -24,17 +24,11 @@ body {
 /* Filters */
 .filters {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-#search {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  background: var(--bg-card);
-  color: var(--text-color);
-}
+
 
 .buttons button {
   margin-left: 8px;
@@ -86,6 +80,7 @@ body {
 }
 
 .card:hover {
+
   transform: translateY(-5px);
 }
 
