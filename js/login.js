@@ -1,15 +1,15 @@
-const form     = document.getElementById("login-form");
-const email    = document.getElementById("email");
-const password = document.getElementById("password");
+const form=document.getElementById("login-form");
+const email=document.getElementById("email");
+const password=document.getElementById("password");
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    email.style.borderColor    = "";
-    password.style.borderColor = "";
+    email.style.borderColor= "";
+    password.style.borderColor= "";
 
-    document.getElementById("email-error").style.display    = "none";
-    document.getElementById("password-error").style.display = "none";
+    document.getElementById("email-error").style.display= "none";
+    document.getElementById("password-error").style.display= "none";
 
     let hasError = false;
 
@@ -49,7 +49,7 @@ form.addEventListener("submit", function(e) {
 
     const username = userData.name;
 
-    email.value    = "";
+    email.value= "";
     password.value = "";
 
     localStorage.setItem("loggedIn", "true");
