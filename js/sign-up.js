@@ -1,7 +1,7 @@
-const form            = document.getElementById("signup-form");      
-const name            = document.getElementById("name");             
-const email           = document.getElementById("email");            
-const password        = document.getElementById("password");         
+const form= document.getElementById("signup-form");      
+const name= document.getElementById("name");             
+const email= document.getElementById("email");            
+const password= document.getElementById("password");         
 const confirmPassword = document.getElementById("confirm-password"); 
 
 
@@ -9,15 +9,15 @@ form.addEventListener("submit", function(e) {
 
     e.preventDefault();
 
-    name.style.borderColor            = "";
-    email.style.borderColor           = "";
-    password.style.borderColor        = "";
+    name.style.borderColor = "";
+    email.style.borderColor = "";
+    password.style.borderColor = "";
     confirmPassword.style.borderColor = "";
 
-    document.getElementById("name-error").style.display     = "none";
-    document.getElementById("email-error").style.display    = "none";
+    document.getElementById("name-error").style.display = "none";
+    document.getElementById("email-error").style.display = "none";
     document.getElementById("password-error").style.display = "none";
-    document.getElementById("confirm-error").style.display  = "none";
+    document.getElementById("confirm-error").style.display = "none";
 
     let hasError = false;
 
@@ -68,8 +68,8 @@ form.addEventListener("submit", function(e) {
     const username = name.value.trim();
 
     const userData = {
-        name:     name.value.trim(),
-        email:    email.value.trim(),
+        name: name.value.trim(),
+        email: email.value.trim(),
         password: password.value
     };
 
@@ -79,11 +79,11 @@ form.addEventListener("submit", function(e) {
 
     localStorage.setItem("username", username);
 
-    name.value            = "";
-    email.value           = "";
-    password.value        = "";
-    confirmPassword.value = "";
+    name.value = "";
+    email.value = "";
+    password.value= "";
+    confirmPassword.value= "";
 
-    alert("Welcome, " + username + "! Your account has been created successfully.");
+    alert("Welcome, " + username + ", Your account has been created successfully.");
     window.location.href = "./login.html";
 });
