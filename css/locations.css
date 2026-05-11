@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -12,27 +11,21 @@ body {
     font-family: var(--font-body);
     transition: background-color 0.4s ease, color 0.4s ease;
 }
-
-/* السكرول بار الذهبي */
 ::-webkit-scrollbar {
     width: 8px;
 }
-
 ::-webkit-scrollbar-track {
     background-color: var(--background-color);
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 10px;
 }
-/* قسم العناوين */
 .locations-section {
     padding: 80px 20px 40px;
     text-align: center;
     background-color: var(--background-color);
 }
-
 .content h1 {
     font-family: var(--font-heading);
     font-size: 4rem;
@@ -63,19 +56,17 @@ body {
     flex-wrap: wrap;
     gap: 35px;
     padding: 80px 5%;
-    background: radial-gradient(circle at center, var(--bg-card) 0%, var(--background-color) 100%);
     border-top: 1px solid rgba(212, 175, 55, 0.2);
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
 }
 
 .card {
     position: relative;
-    flex: 1 1 350px;
+    flex: 1 1 350px; /* grow-shrink */
     max-width: 400px;
     min-height: 550px;
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);  
     border-radius: 20px;
     border: 1px solid rgba(212, 175, 55, 0.2);
     overflow: hidden;
@@ -84,31 +75,12 @@ body {
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(212, 175, 55, 0.1),
-        transparent
-    );
-    transition: 0.5s;
-}
-
-.card:hover::before {
-    left: 100%;
-}
 
 .card:hover {
     transform: translateY(-15px) scale(1.02);
     box-shadow:
         0 20px 40px rgba(0, 0, 0, 0.4),
-        0 0 20px rgba(212, 175, 55, 0.1);
+        0 0 20px rgba(212, 175, 55, 0.1);   
     background: rgba(255, 255, 255, 0.08);
 }
 
@@ -119,7 +91,7 @@ body {
     border-radius: 15px;
     object-fit: cover;
     transition: 0.5s ease;
-    filter: grayscale(30%);
+    filter: grayscale(30%);/*بيخلي الصوره ابيض و اسود بنسبه 30% 0*/
 }
 
 .card:hover img {
@@ -163,13 +135,11 @@ body {
 }
 
 .list li::before {
-    content: "•";
+    content: ".";
     color: var(--main-color);
     font-weight: bold;
     margin-right: 8px;
 }
-
-/* الزر الذهبي المتفاعل */
 .card-content .btn {
     margin-top: auto;
     align-self: flex-start;
