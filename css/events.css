@@ -14,7 +14,7 @@ body {
     font-family:var( --font-heading);    /* ده نوع الخط اللي بيستخدم في العناوين الكبيرة */ 
     line-height: 1.2;
     color: var(--text-color);
-    text-transform: capitalize;
+    
     margin-bottom: 30px;
     margin-left: 60px;
 
@@ -40,6 +40,8 @@ body {
     padding: 50px 20px;
     background-color: var(--bg-card);
 }
+
+
 /* ده لي div الكبير اللى شايل الكروت */
 .events .container {
     display: flex;
@@ -127,18 +129,9 @@ body {
   font-size: 13px;
   color: var(--text-color);
   line-height: 1.5;
-  overflow: scroll;
   margin-bottom: 15px;
   max-width: 270px;
   max-height: 113px;
-}
-
-::-webkit-scrollbar{
-    width: 2px;
-}
-
-::-webkit-scrollbar-corner{
-  background-color: var(--background-color);
 }
 
 .explore-container .main-btn {
@@ -211,15 +204,6 @@ body {
         max-width: 100%;
     }
 
-    /* تعديل الفوتر */
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
 
-    .footer-col {
-        width: 100%;
-    }
 }
 
