@@ -1,4 +1,3 @@
-
 let events = {
   1: {
     title: "The Art of Ancient Egypt",
@@ -172,7 +171,6 @@ This special evening lecture at Mena House — with the Pyramids of Giza visible
 function openEvent(id) {
   localStorage.setItem("eventId", id);
 }
-
 
 function applyFilter() {
   const selectedMonth = document.getElementById('monthFilter').value;
