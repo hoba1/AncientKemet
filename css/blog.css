@@ -35,7 +35,6 @@ body {
 #content {
   color: var(--text-color);
   line-height: 1.9;
-  white-space: pre-line;
   font-size: 17px;
 }
 
