@@ -122,7 +122,7 @@
                 <span class="badge badge-exhibition">EXHIBITION</span>
                 <h3>The Gilded Dynasty</h3>
                 <p>An immersive journey through the reign of Ramesses II — exploring royal architecture, court life, and divine kingship.</p>
-                <span class="card-meta">60 min read</span>
+                <span class="card-meta"></span>
                 <a href="https://archaeology.org/collection/rediscovering-egypts-golden-dynasty/">EXPLORE <i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
         </div>
@@ -131,9 +131,9 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-col">
-          <h2 class="footer-logo">Egypt Heritage</h2>
+          <h2 class="footer-logo">Ancient Kemet</h2>
           <p>
-            Explore the legacy of ancient Egypt — history, culture, and timeless
+            Explore the legacy of ancient Egypt | history, culture, and timeless
             wonders.
           </p>
         </div>
@@ -181,15 +181,7 @@
 
   <script>
    
-    document.addEventListener('click', function (e) {
-        if (e.target.classList.contains('delete-btn')) {
-            const card = e.target.closest('.favorite-card');
-            card.style.transition = 'opacity 0.3s, transform 0.3s';
-            card.style.opacity = '0';
-            card.style.transform = 'scale(0.9)';
-            setTimeout(() => card.remove(), 300);
-        }
-    });
+    
 
     
     const filterBtns = document.querySelectorAll('.filter-btn');
