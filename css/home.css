@@ -154,13 +154,6 @@
     box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2), 0 10px 20px rgba(212, 175, 55, 0.2);
 }
 
-.civilization-card .civilization-desc {
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
 .civilization-card h3 {
     margin-top: 0;
     color: var(--main-color);
