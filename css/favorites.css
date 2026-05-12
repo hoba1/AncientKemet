@@ -17,9 +17,6 @@
      color: var(--text-color);
     max-width: 500px;
 }
-.favorite-card:hover .delete-btn {
-    opacity: 1;
-}
 
 
 .favorites-controls {
@@ -134,7 +131,9 @@
 }
 
 
-
+.favorite-card:hover .delete-btn {
+    opacity: 1;
+}
 
 
 .delete-btn:hover {
@@ -224,11 +223,7 @@
         padding: 0 20px 40px;
     }
 
-    .favorite-card {
-        flex: 0 1 calc(50% - 10px);
-        max-width: calc(50% - 10px);
-    }
-
+   
     .card-img {
         height: 180px;
     }
@@ -246,7 +241,7 @@
 
     .favorites-controls {
         flex-direction: column;
-        align-items: stretch;
+        
     }
 
     .filter-buttons {
