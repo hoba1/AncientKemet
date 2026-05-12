@@ -1,4 +1,4 @@
-/* BASE */
+/* base */
 body {
   font-family: var(--font-body);
   background-color: var(--background-color);
@@ -9,7 +9,7 @@ section {
   padding: 80px 60px;
 }
 
-/* PILLARS */
+/* pillars */
 .pillars-section {
   background-color: var(--bg-card);
   border-top: 1px solid #d4af3718;
@@ -18,23 +18,21 @@ section {
 
 .pillars-grid,
 .articles-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
   margin-top: 40px;
+  font-size: 0; /* removes whitespace gap */
 }
 
 .pillar-card {
-  flex: 1 1 calc(33.333% - 18px);
-  min-width: 220px;
+  display: inline-block;
+  width: 32%;
+  margin: 10px 0.65%;
   background: var(--background-color);
   padding: 36px 24px;
   border-radius: 10px;
   text-align: center;
   border: 1px solid #d4af3722;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  font-size: 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .pillar-card:hover,
@@ -87,7 +85,7 @@ section {
 
 .timeline-item {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; 
   gap: 16px;
 }
 
@@ -103,7 +101,7 @@ section {
   letter-spacing: 2px;
   color: var(--main-color);
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: nowrap; 
 }
 
 .timeline-center {
@@ -112,13 +110,20 @@ section {
   align-items: center;
 }
 
-
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  border: 3px solid var(--background-color);
+  box-shadow: 0 0 0 2px var(--main-color);
+  flex-shrink: 0;
+}
 
 .timeline-line {
   width: 2px;
   flex: 1;
   min-height: 60px;
-  background: linear-gradient(to bottom, var(--main-color), #d4af3730);
   margin-top: 4px;
 }
 
@@ -129,9 +134,7 @@ section {
   border-radius: 10px;
   padding: 20px 24px;
   margin-bottom: 20px;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .timeline-card:hover {
@@ -185,15 +188,15 @@ section {
 }
 
 .article-card {
-  flex: 1 1 calc(33.333% - 18px);
-  min-width: 260px;
+  display: inline-block;
+  width: 32%;
+  margin: 10px 0.65%;
   background: var(--background-color);
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #d4af3718;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  font-size: 16px; /* reset after parent font-size: 0 */
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card-image {
@@ -251,15 +254,12 @@ section {
   gap: 12px;
 }
 
-/* MEDIA QUERIES */
+/* media */
 @media (max-width: 992px) {
-  .pillars-grid,
-  .articles-grid {
-    flex-direction: column;
-  }
   .pillar-card,
   .article-card {
-    flex: 1 1 100%;
+    width: 100%;
+    margin: 0 0 20px;
   }
 }
 
